@@ -7,6 +7,9 @@ import glob from 'rollup-plugin-glob'
 import { terser } from 'rollup-plugin-terser'
 import config from 'sapper/config/rollup'
 import pkg from './package.json'
+import autoPreprocess from 'svelte-preprocess'
+import typescript from 'rollup-plugin-typescript2'
+import babel from '@rollup/plugin-babel'
 
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
@@ -25,18 +28,17 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode),
       }),
       svelte({
+        preprocess: autoPreprocess(),
         dev,
         hydratable: true,
         emitCss: true,
       }),
-      markdown(),
-      glob(),
       resolve({
         browser: true,
         dedupe: ['svelte'],
       }),
-      commonjs(),
-
+      typescript(),
+      babel({ babelHelpers: 'bundled' }),
       !dev &&
         terser({
           module: true,
@@ -57,13 +59,15 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode),
       }),
       svelte({
+        preprocess: autoPreprocess(),
         generate: 'ssr',
         dev,
       }),
       resolve({
         dedupe: ['svelte'],
       }),
-      commonjs(),
+      typescript(),
+      babel({ babelHelpers: 'bundled' }),
     ],
     external: Object.keys(pkg.dependencies).concat(
       require('module').builtinModules || Object.keys(process.binding('natives'))

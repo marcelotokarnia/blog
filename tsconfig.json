@@ -1,0 +1,16 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*"],
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    "target": "es2015",
+    "module": "es2015",
+    "types": ["svelte", "node", "@sapper"],
+    "paths": {
+      "*": ["node_modules/*", "typings/*"],
+      "@posts": ["src/posts/index.js"],
+      "@components/*": ["src/components/*"]
+    }
+  }
+}

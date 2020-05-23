@@ -1,13 +1,11 @@
-import posts from './_posts'
+import posts from '@posts'
 
 const lookup = new Map()
 posts.forEach(post => {
   lookup.set(post.slug, JSON.stringify(post))
 })
 
-export function get(req, res, next) {
-  // the `slug` parameter is available because
-  // this file is called [slug].json.js
+export function get(req, res) {
   const { slug } = req.params
 
   if (lookup.has(slug)) {

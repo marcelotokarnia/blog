@@ -4,8 +4,6 @@ summary: That's a new post
 date: 2020-05-21
 ---
 
-# Sick
+[Link to the old](/blog/sick)
 
-- this
-- is
-- markdown
+![Image](/successkid.jpg)

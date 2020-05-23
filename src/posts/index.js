@@ -1,6 +1,6 @@
-import posts from '../posts/*.md'
+import posts from './*.md'
 
-export default posts
+const parsedPosts = posts
   .map(({ metadata: { title, date, summary }, filename, html }) => ({
     title,
     slug: filename.replace(/\.md$/, ''),
@@ -9,3 +9,5 @@ export default posts
     html,
   }))
   .sort(({ date: a }, { date: b }) => b - a)
+
+export default parsedPosts
