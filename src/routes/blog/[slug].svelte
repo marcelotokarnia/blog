@@ -12,19 +12,30 @@
 </script>
 
 <script>
+  import Tag from '@components/Tag.svelte'
   export let post
-  const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'short' })
+  const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' })
 </script>
 
 <style>
-  /*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
+  .author-pic {
+    width: 100%;
+    max-width: 50px;
+    flex: 1;
+    padding: 0 0.75rem 0 0;
+  }
+
+  .vertical-flex {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .vertical-flex span {
+    flex: 1;
+  }
+  .content {
+    padding: 0.75rem 0;
+  }
   .content :global(h2) {
     font-size: 1.4em;
     font-weight: 500;
@@ -50,14 +61,33 @@
   .content :global(li) {
     margin: 0 0 0.5em 0;
   }
+
+  footer {
+    padding: 0.5rem 0 3rem;
+    float: right;
+    display: flex;
+  }
 </style>
 
 <svelte:head>
   <title>{post.title}</title>
 </svelte:head>
 
-<h1>{dateFormater.format(new Date(post.date))} - {post.title}</h1>
+<h1>{post.title}</h1>
+
+{#each post.tags as tag}
+  <Tag name={tag} />
+{/each}
 
 <div class="content">
   {@html post.html}
 </div>
+
+<footer>
+  <img class="author-pic" alt={post.author} src={post.authorPic} />
+  <span class="vertical-flex">
+    <span>{dateFormater.format(new Date(post.date))}</span>
+    <span>{post.author}</span>
+  </span>
+
+</footer>

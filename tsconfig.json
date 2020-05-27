@@ -4,13 +4,15 @@
   "compilerOptions": {
     "allowJs": true,
     "baseUrl": "./",
+    "moduleResolution": "node",
     "target": "es2015",
     "module": "es2015",
     "types": ["svelte", "node", "@sapper"],
+    "typeRoots": ["typings"],
     "paths": {
-      "*": ["node_modules/*", "typings/*"],
       "@posts": ["src/posts/index.js"],
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "*": ["node_modules/*"]
     }
   }
 }

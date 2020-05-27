@@ -1,11 +1,11 @@
 import posts from './*.md'
 
 const parsedPosts = posts
-  .map(({ metadata: { title, date, summary }, filename, html }) => ({
-    title,
+  .map(({ metadata, filename, html }) => ({
+    ...metadata,
     slug: filename.replace(/\.md$/, ''),
-    date: new Date(date),
-    summary,
+    date: new Date(metadata.date),
+    tags: metadata.tags ? metadata.tags.split(',') : [],
     html,
   }))
   .sort(({ date: a }, { date: b }) => b - a)

@@ -12,8 +12,12 @@ export function get(req, res) {
     res.writeHead(200, {
       'Content-Type': 'application/json',
     })
+    const post =
+      process.env.NODE_ENV === 'development'
+        ? JSON.stringify(posts.find(({ slug: postSlug }) => postSlug === slug))
+        : lookup.get(slug)
 
-    res.end(lookup.get(slug))
+    res.end(post)
   } else {
     res.writeHead(404, {
       'Content-Type': 'application/json',

@@ -10,6 +10,17 @@ import pkg from './package.json'
 import autoPreprocess from 'svelte-preprocess'
 import typescript from 'rollup-plugin-typescript2'
 import babel from '@rollup/plugin-babel'
+import alias from 'rollup-plugin-alias'
+
+const srcFolder = `${__dirname}/src`
+
+const aliases = alias({
+  resolve: ['.js', '.svelte'],
+  entries: [
+    { find: '@components', replacement: `${srcFolder}/components` },
+    { find: '@posts', replacement: `${srcFolder}/posts` },
+  ],
+})
 
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
@@ -20,9 +31,11 @@ const onwarn = (warning, onwarn) =>
 
 export default {
   client: {
+    preserveEntrySignatures: 'strict',
     input: config.client.input(),
     output: config.client.output(),
     plugins: [
+      aliases,
       replace({
         'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode),
@@ -52,6 +65,7 @@ export default {
     input: config.server.input(),
     output: config.server.output(),
     plugins: [
+      aliases,
       markdown(),
       glob(),
       replace({

@@ -1,12 +1,11 @@
 import posts from '@posts'
 
-const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'short' } as any)
+const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' } as any)
 
 const contents = JSON.stringify(
-  posts.map(({ title, slug, date }) => ({
-    title,
-    slug,
-    date: dateFormater.format(date),
+  posts.map(post => ({
+    ...post,
+    date: +post.date,
   }))
 )
 
