@@ -1,6 +1,6 @@
 ---
-title: How does this blog works in terms of tech ?
-summary: On this post I'm going through the technical choices of this blog. How do I add, remove, sort blog posts.
+title: How does this tech work ?
+summary: Insights about the technical choices of this blog. How do I add, remove, sort blog posts.
 date: 2020-05-29
 author: Marcelo Tokarnia
 authorPic: https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,g_face:center,r_max,h_150,w_150,f_auto,q_auto/v1590609457/profile/A54I1782_qa84qz.jpg
@@ -48,7 +48,7 @@ export default parsedPosts
 
 4. And due to the amazing pattern matching of urls provided by Sapper I can map a url to each specific filename slug of each markdown added with no additional code. Check the [frontend](https://github.com/marcelotokarnia/blog/blob/94ae0c1ebb0b11da08e87cf6b61c8e4d772aaa59/src/routes/blog/%5Bslug%5D.svelte) and the [backend](https://github.com/marcelotokarnia/blog/blob/94ae0c1ebb0b11da08e87cf6b61c8e4d772aaa59/src/routes/blog/%5Bslug%5D.json.ts)
 
-So truly, whenever I want to add a blog post I just need to add a MD file to [this folder](https://github.com/marcelotokarnia/blog/tree/94ae0c1ebb0b11da08e87cf6b61c8e4d772aaa59/src/posts).
+So truly, whenever I want to add a blog post I just need to add a MD file to [this folder](https://github.com/marcelotokarnia/blog/tree/94ae0c1ebb0b11da08e87cf6b61c8e4d772aaa59/src/posts). Like I'm doing [in this very same commit](https://github.com/marcelotokarnia/blog/commit/d724bffe3f8274ba1e59d71e540d5e0d3504057f).
 
 To remove it, I just have to delete it.
 
