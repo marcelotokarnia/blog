@@ -12,7 +12,7 @@ And it is a pretty clever concept, specially for times like these we are living 
 
 As expected of any live presentations, specially involving demos, and globally broadcasting, there were a few technical issues here and there, but let's focus on what went right instead. I did learn a few things and I would like to share those.
 
-I'll first add a disclaimer that I'm merely reproducing the information I wrote down from watching the presentations, I'm by no means an expert in any of the following topics, and further research is encouraged if you have any specific interest.
+I'll first add a disclaimer that I'm merely reproducing the information I wrote down from watching the presentations, I'm by no means an expert in any of the following topics, in fact, most of it I was hearing for the very first time and further research is encouraged if you are interested.
 
 ---
 
@@ -72,7 +72,9 @@ But `es6 modules` are first loaded and parsed before executed, and that brings 2
 
 They are browser compatible(-ish) now, but I won't go into much details about it. So soon you won't need `Babel`, `Webpack`, `Rollup` or whatever to "prepare" your code to be browser compatible, because, let's agree everyone has been using es6 modules for a long time now, but it being compiled to commonjs before shipped just forfeits us from a lot of module benefits like the ones just mentioned. 
 
-So the future is bright ☀️
+I'm going to add on top of this presentation's content, because I've been following the topic for a while now and, just to illustrate further the potential of ES6 modules, specially on the browser: 
+
+Imagine a world where you can directly import each module separately, the browser will be able to cache that request, so whenever you go in a website that uses common packages like `React`, `Vue`, `Axios`, `Redux`... all of this would be most likely ALREADY CACHED in your browser, so no need to implicitly redownload bundled dependencies on every different website you visit. Wonderful potential, isn't it ? 🤗
 
 ---
 
