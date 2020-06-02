@@ -43,6 +43,8 @@ app.get('/', (request, response) => {
 
 There is no need to append `requestId` to the `request` object or send down the `request` object to the `log` function, because with `asyncLocalStorage` in place all the asynchronous context inside `asyncLocalStorage.run` can have access to that `store` that was initialized as first parameter (in this example `requestId`)
 
+I even got inspired by this possibility and added this on a route in one of my personal projects, I named this commit: ["async local storage, its crazy because it works"](https://github.com/marcelotokarnia/strava-maps/commit/bb8cc897934acadc791534fdf1d5b1ffbfa3a796). It definitely opens up a whole lot of possibilities for the future. Thanks Vladimir.
+
 ---
 
 ### [Önder Ceylan](https://www.linkedin.com/in/onderceylan/) - Puppeteer can automate that
