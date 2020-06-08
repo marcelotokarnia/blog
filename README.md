@@ -1,36 +1,14 @@
-# sapper-template
+# Marcelo Tokarnia - Blog
 
-The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
-
-
-## Getting started
-
-
-### Using `degit`
-
-[`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository. Use either the `rollup` or `webpack` branch in `sapper-template`:
-
-```bash
-# for Rollup
-npx degit "sveltejs/sapper-template#rollup" my-app
-# for webpack
-npx degit "sveltejs/sapper-template#webpack" my-app
-```
-
-
-### Using GitHub templates
-
-Alternatively, you can use GitHub's template feature with the [sapper-template-rollup](https://github.com/sveltejs/sapper-template-rollup) or [sapper-template-webpack](https://github.com/sveltejs/sapper-template-webpack) repositories.
-
+This application leverages on the default [Sapper](https://github.com/sveltejs/sapper) template.
 
 ### Running the project
 
 However you get the code, you can install dependencies and run the project in development mode with:
 
 ```bash
-cd my-app
-npm install # or yarn
-npm run dev
+yarn
+yarn dev
 ```
 
 Open up [localhost:3000](http://localhost:3000) and start clicking around.
@@ -38,7 +16,15 @@ Open up [localhost:3000](http://localhost:3000) and start clicking around.
 Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
 
 
-## Structure
+## More about how this application works architecture wise
+
+[Click here](src/posts/how-blog-tech.md)
+
+## See this app live
+
+[Blog@Vercel](https://marcelo.tokks.tech)
+
+## Down ahead you will find Sapper specific documentation ... 
 
 Sapper expects to find two directories in the root of your project —  `src` and `static`.
 
