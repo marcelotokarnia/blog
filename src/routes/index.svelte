@@ -46,7 +46,7 @@
 <h1>Marcelo Tokarnia</h1>
 
 <figure>
-  <img alt="Success Kid" src={profileSource} />
+  <img alt="Marcelo Tokarnia" src={profileSource} />
   <figcaption>👆🏻I'm that guy ☝🏻</figcaption>
 </figure>
 
