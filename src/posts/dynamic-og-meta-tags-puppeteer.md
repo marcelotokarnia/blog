@@ -7,7 +7,7 @@ authorPic: https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,g_fac
 tags: Puppeteer,Strava,Redis,meta,OG
 ---
 
-First of all I would like to put up a disclaimer that on my first implementation I was really trying to follow some lightweighted Puppeteer guidelines, such as described by [Önder](/blog/geekle-node-conference-day2#önder-ceylanhttpswwwlinkedincominonderceylan---puppeteer-can-automate-that), and by following some other blog posts I tried using [puppeter-core](https://www.npmjs.com/package/puppeteer-core) + [chrome-aws-lambda](https://github.com/alixaxel/chrome-aws-lambda) because I think it works out of the box for serverless functions on Netlify (or so I read).
+First of all I would like to put up a disclaimer that on my first implementation I was really trying to follow some lightweighted Puppeteer guidelines, such as described by [Önder](/blog/geekle-node-conference-day2#önder-ceylanhttpswwwlinkedincominonderceylan---puppeteer-can-automate-that), and by following some other blog posts I tried using [puppeteer-core](https://www.npmjs.com/package/puppeteer-core) + [chrome-aws-lambda](https://github.com/alixaxel/chrome-aws-lambda) because I think it works out of the box for serverless functions on Netlify (or so I read).
 
 But since my service is deployed on Heroku for now I struggled a lot to make it work 😅 but then I stumbled upon this solution, using [this heroku buildpack](https://github.com/jontewks/puppeteer-heroku-buildpack). It installs all the required linux packages on each build (which takes forever, so I might migrated this to a netlify microservice).
 
