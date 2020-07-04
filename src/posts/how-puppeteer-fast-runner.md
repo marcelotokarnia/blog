@@ -129,8 +129,8 @@ const crawlLeaderboard = async (page, id) => {
 }
 ```
 
-### And the practical result:
-
 <div style="text-align: center"><p>Strava Segment Crawler</p><img src="https://res.cloudinary.com/marcelotokarnia/image/upload/v1594121276/blog/strava-leaderboard-crawler_n45klw.gif" /><p>Partial outputs are printed to the console while puppeteer orchestrates the scraping</p></div>
 
-<div style="text-align: center"><p>And in the end it DID pay out the effort</p><img src="https://res.cloudinary.com/marcelotokarnia/image/upload/c_scale,w_600/v1594121751/blog/strava-crowns_ffrouz.png" /><p>[On this run](https://www.strava.com/activities/3704016033) I came in FIRST on two specific segments.</p></div>
+### And the practical result:
+
+<div style="text-align: center"><p>And in the end it DID pay out the effort</p><img src="https://res.cloudinary.com/marcelotokarnia/image/upload/c_scale,w_600/v1594121751/blog/strava-crowns_ffrouz.png" /><p><a href="https://www.strava.com/activities/3704016033">On this run</a> I came in FIRST on two specific segments.</p></div>
