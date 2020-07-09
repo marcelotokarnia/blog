@@ -12,6 +12,7 @@
 </script>
 
 <script>
+  import 'highlight.js/styles/github.css'
   import Tag from '@components/Tag.svelte'
   export let post
   const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' })
