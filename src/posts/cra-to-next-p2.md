@@ -39,12 +39,28 @@ AND still keep the server side headers for example, that was the biggest gain I 
 
 - [Next API Routes forward to Remote](https://github.com/marcelotokarnia/strava-maps/commit/54b516f1a6c631792486c2a7c84c2111d5f8ac6a#diff-ddff7d35e674436b7d8f3a42d54d4443)
 
-TBA...
+So I decided to rollback on the cors implementation, it was getting very tricky and inconsistent with the cookie management (funny enough it did work perfectly on my machine 😂), well, locally everything was in `localhost`, right ? (even though on different ports)
+
+So it was not exactly a CORS scenario, I had high hopes because I was testing on a different environment than my application would be deployed to.
+
+So I decided to implement this `forwardToRemote` helper and create a bunch of `next api routes`, which would be the only backend my client would be communicating with directly, then from there communicate with the other one on Heroku.
+
+So this would basically forward body,headers,cookie and everything to the Heroku application and back.
 
 - [X-Cookie](https://github.com/marcelotokarnia/strava-maps/commit/01aaf7587c7f355a03f852cc755404df3938ee07)
 
-TBA...
+But for your own application's security, most servers don't forward cookies and don't accept cookies from/to different hosts.
+
+So I had to explicitly make that happen by renaming my `cookie` to `x-cookie` 🍪 and that did the trick! Finally! 🎉🏆
 
 - [Fix ts-jest tests](https://github.com/marcelotokarnia/strava-maps/commit/83854b73d1b22dae02207510b820585e9e24414c)
 
-TBA...
+And the last tricky bump was that if you are running `next` with `ts`, it needs your tsconfig `jsx` compilerOptions to be `preserve` and in fact, Next changes it for you when you run your application.
+
+But my ts-jest tests needed it to be `react` instead, and for that I had to create an extension of my tsconfig file just to be used in the test environment.
+
+Now all the tests are back to green 💚✅
+
+And the application is happily running at my own custom domain, with Heroku addons, with ssr headers and for free!
+
+[See it for yourself](https://strava.tokks.tech)
