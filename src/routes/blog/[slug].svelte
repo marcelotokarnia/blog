@@ -14,6 +14,8 @@
 <script>
   import 'highlight.js/styles/github.css'
   import Tag from '@components/Tag.svelte'
+  import Github from '@components/GithubIcon.svelte'
+  import KoFi from '@components/KoFi.svelte'
   export let post
   const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' })
 </script>
@@ -65,8 +67,39 @@
 
   footer {
     padding: 0.5rem 0 3rem;
+  }
+
+  .fr {
     float: right;
+  }
+
+  .fl {
+    float: left;
+  }
+
+  .flex {
     display: flex;
+  }
+
+  .card-button {
+    transition: background-color 0.15s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #111;
+    color: #f4f4f4;
+    align-items: center;
+    display: inline-flex;
+    border-radius: 0.25rem;
+    border-style: none;
+    border-width: 0;
+  }
+
+  .card-content {
+    font-size: 0.875rem;
+    margin-left: 1rem;
+    padding-right: 0.5rem;
   }
 </style>
 
@@ -85,10 +118,21 @@
 </div>
 
 <footer>
-  <img class="author-pic" alt={post.author} src={post.authorPic} />
-  <span class="vertical-flex">
-    <span>{dateFormater.format(new Date(post.date))}</span>
-    <span>{post.author}</span>
-  </span>
+  <div class="fl flex">
+    <KoFi />
+    <a
+      class="card-button"
+      href="https://github.com/marcelotokarnia/blog/edit/master/src/posts/{post.slug}.md">
+      <Github />
+      <span class="card-content">Edit this page</span>
+    </a>
+  </div>
+  <div class="fr flex">
+    <img class="author-pic" alt={post.author} src={post.authorPic} />
+    <span class="vertical-flex">
+      <span>{dateFormater.format(new Date(post.date))}</span>
+      <span>{post.author}</span>
+    </span>
+  </div>
 
 </footer>
