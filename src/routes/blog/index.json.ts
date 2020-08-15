@@ -1,7 +1,5 @@
 import posts from '@posts'
 
-const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' } as any)
-
 const contents = JSON.stringify(
   posts.map(post => ({
     ...post,
