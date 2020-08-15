@@ -46,6 +46,10 @@
     padding: 1em 0.5em;
     display: block;
   }
+
+  .hide {
+    display: none;
+  }
 </style>
 
 <nav>
@@ -56,6 +60,10 @@
 
     <li>
       <a rel="prefetch" aria-current={segment === 'blog' ? 'page' : undefined} href="blog">Blog</a>
+    </li>
+
+    <li>
+      <a href="feed.xml" class="hide">Feed</a>
     </li>
   </ul>
 </nav>

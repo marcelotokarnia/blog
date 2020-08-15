@@ -10,7 +10,7 @@
     "types": ["svelte", "node", "@sapper"],
     "typeRoots": ["typings"],
     "paths": {
-      "@posts": ["src/posts/index.js"],
+      "@posts": ["src/posts/index.ts"],
       "@components/*": ["src/components/*"],
       "*": ["node_modules/*"]
     }

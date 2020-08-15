@@ -1,6 +1,7 @@
 import posts from './*.md'
+import { Post } from '../interfaces/posts'
 
-const parsedPosts = posts
+const parsedPosts: Array<Post> = posts
   .map(({ metadata, filename, html }) => ({
     ...metadata,
     slug: filename.replace(/\.md$/, ''),
@@ -8,6 +9,6 @@ const parsedPosts = posts
     tags: metadata.tags ? metadata.tags.split(',') : [],
     html,
   }))
-  .sort(({ date: a }, { date: b }) => b - a)
+  .sort(({ date: a }, { date: b }) => b.getTime() - a.getTime())
 
 export default parsedPosts

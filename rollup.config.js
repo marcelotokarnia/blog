@@ -15,7 +15,7 @@ import alias from 'rollup-plugin-alias'
 const srcFolder = `${__dirname}/src`
 
 const aliases = alias({
-  resolve: ['.js', '.svelte'],
+  resolve: ['.js', '.svelte', '.ts'],
   entries: [
     { find: '@components', replacement: `${srcFolder}/components` },
     { find: '@posts', replacement: `${srcFolder}/posts` },
