@@ -1,5 +1,5 @@
 ---
-title: From Create React App to Next - The first try
+title: From Create React App to Next - The solution
 summary: The first steps on tackling the migration
 date: 2020-07-21
 author: Marcelo Tokarnia

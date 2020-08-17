@@ -63,6 +63,10 @@
     </li>
 
     <li>
+      <a rel="prefetch" aria-current={segment === 'ts' ? 'page' : undefined} href="ts">TS posts</a>
+    </li>
+
+    <li>
       <a href="feed.xml" class="hide">Feed</a>
     </li>
   </ul>
