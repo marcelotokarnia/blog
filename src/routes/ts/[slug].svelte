@@ -12,7 +12,7 @@
 </script>
 
 <script>
-  import 'highlight.js/styles/github.css'
+  import 'highlight.js/styles/vs.css'
   import Tag from '@components/Tag.svelte'
   import Github from '@components/GithubIcon.svelte'
   import KoFi from '@components/KoFi.svelte'
