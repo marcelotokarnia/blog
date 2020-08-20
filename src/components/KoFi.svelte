@@ -26,11 +26,10 @@
     content: url('https://storage.ko-fi.com/cdn/whitelogo.svg');
   }
   .btn-container {
-    display: inline-flex !important;
-    white-space: nowrap;
-    min-width: 160px;
     margin: 0.5rem;
     padding: 0.5rem;
+    background-color: #111;
+    border-radius: 0.25rem;
   }
   span.kofitext {
     color: #fff !important;
@@ -55,7 +54,6 @@
     line-height: 36px !important;
     min-width: 150px;
     display: inline-block !important;
-    background-color: #111;
     padding: 2px 12px !important;
     text-align: center !important;
     border-radius: 7px;
