@@ -1,18 +1,9 @@
-import posts from '@tsposts'
+import tips from '@tstips'
 
 const lookup = new Map()
-posts.forEach(post => {
+tips.forEach(post => {
   lookup.set(post.slug, JSON.stringify(post))
 })
-
-class ArrayOfAnything<T = any> {
-  constructor(public collection: T[]) {}
-  get(index: number): T {
-    return this.collection[index]
-  }
-}
-
-const x = new ArrayOfAnything(['a', 'b'])
 
 export function get(req, res) {
   const { slug } = req.params
@@ -23,7 +14,7 @@ export function get(req, res) {
     })
     const post =
       process.env.NODE_ENV === 'development'
-        ? JSON.stringify(posts.find(({ slug: postSlug }) => postSlug === slug))
+        ? JSON.stringify(tips.find(({ slug: tipSlug }) => tipSlug === slug))
         : lookup.get(slug)
 
     res.end(post)

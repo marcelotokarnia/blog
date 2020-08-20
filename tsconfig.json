@@ -11,7 +11,7 @@
     "typeRoots": ["typings"],
     "paths": {
       "@posts": ["src/posts/index.ts"],
-      "@tsposts": ["src/tsposts/index.ts"],
+      "@tstips": ["src/tstips/index.ts"],
       "@components/*": ["src/components/*"],
       "*": ["node_modules/*"]
     }

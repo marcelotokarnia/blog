@@ -19,7 +19,7 @@ const aliases = alias({
   entries: [
     { find: '@components', replacement: `${srcFolder}/components` },
     { find: '@posts', replacement: `${srcFolder}/posts` },
-    { find: '@tsposts', replacement: `${srcFolder}/tsposts` },
+    { find: '@tstips', replacement: `${srcFolder}/tstips` },
   ],
 })
 

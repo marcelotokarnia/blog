@@ -122,7 +122,7 @@
     <KoFi />
     <a
       class="card-button"
-      href="https://github.com/marcelotokarnia/blog/edit/master/src/tsposts/{post.slug}.md">
+      href="https://github.com/marcelotokarnia/blog/edit/master/src/tstips/{post.slug}.md">
       <Github />
       <span class="card-content">Edit this page</span>
     </a>

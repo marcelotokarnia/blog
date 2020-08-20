@@ -63,7 +63,9 @@
     </li>
 
     <li>
-      <a rel="prefetch" aria-current={segment === 'ts' ? 'page' : undefined} href="ts">TS Tips</a>
+      <a rel="prefetch" aria-current={segment === 'ts' ? 'page' : undefined} href="ts/s01e00">
+        TS Tips
+      </a>
     </li>
 
     <li>
