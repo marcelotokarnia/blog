@@ -1,5 +1,6 @@
 <script lang="ts">
   export let className: string = ''
+  const profileUrl: string = 'https://www.linkedin.com/in/marcelo-tokarnia-5a1ab2128/'
 </script>
 
 <style>
@@ -395,11 +396,9 @@
   }
   .LI-badge-container.horizontal.light a {
     color: #008cc9;
-    text-decoration: none;
   }
   .LI-badge-container.horizontal.light a:hover,
   .LI-badge-container.horizontal.light a:focus {
-    text-decoration: underline;
     color: #005e93;
   }
   .LI-badge-container.horizontal.light a:visited {
@@ -411,7 +410,6 @@
   .LI-badge-container.horizontal.light a:visited:hover,
   .LI-badge-container.horizontal.light a:visited:focus {
     color: #005e93;
-    text-decoration: underline;
   }
   .LI-badge-container.horizontal.light a:visited:active {
     color: #005e93;
@@ -421,12 +419,10 @@
   }
   .LI-badge-container.horizontal.light div.alert a {
     color: #fff;
-    text-decoration: underline;
     font-weight: bold;
   }
   .LI-badge-container.horizontal.light div.alert a:hover,
   .LI-badge-container.horizontal.light div.alert a:focus {
-    text-decoration: underline;
   }
   .LI-badge-container.horizontal.light div.alert a:active {
     color: #005e93;
@@ -434,13 +430,11 @@
   .LI-badge-container.horizontal.light div.alert a:visited:hover,
   .LI-badge-container.horizontal.light div.alert a:visited:focus {
     color: #005e93;
-    text-decoration: underline;
   }
   .LI-badge-container.horizontal.light div.alert a:visited:active {
     color: #005e93;
   }
   .LI-badge-container.horizontal.light div.alert:hover a {
-    text-decoration: underline;
   }
   .LI-badge-container.horizontal.light div.alert ul {
     margin: 0 21px 5px 7px;
@@ -471,7 +465,6 @@
   .LI-badge-container.horizontal.light img,
   .LI-badge-container.horizontal.light ul,
   .LI-badge-container.horizontal.light li {
-    text-decoration: none;
     line-height: normal;
     letter-spacing: normal;
     -webkit-box-sizing: content-box;
@@ -500,12 +493,10 @@
     color: #737679;
     color: rgba(0, 0, 0, 0.55);
     font-weight: normal;
-    text-decoration: none;
     vertical-align: middle;
   }
   .LI-badge-container.horizontal.light .LI-field a:hover,
   .LI-badge-container.horizontal.light .LI-field a:focus {
-    text-decoration: none;
     color: #006fa6;
     cursor: pointer;
   }
@@ -519,7 +510,6 @@
   .LI-badge-container.horizontal.light .LI-field a:visited:hover,
   .LI-badge-container.horizontal.light .LI-field a:visited:focus {
     color: #005e93;
-    text-decoration: none;
   }
   .LI-badge-container.horizontal.light .LI-field a:visited:active {
     color: #005e93;
@@ -546,11 +536,9 @@
     color: #434649;
     color: rgba(0, 0, 0, 0.7);
     font-weight: bold;
-    text-decoration: none;
   }
   .LI-badge-container.horizontal.light .LI-name a:hover,
   .LI-badge-container.horizontal.light .LI-name a:focus {
-    text-decoration: none;
     color: #006fa6;
     cursor: pointer;
   }
@@ -564,7 +552,6 @@
   .LI-badge-container.horizontal.light .LI-name a:visited:hover,
   .LI-badge-container.horizontal.light .LI-name a:visited:focus {
     color: #005e93;
-    text-decoration: none;
   }
   .LI-badge-container.horizontal.light .LI-name a:visited:active {
     color: #005e93;
@@ -610,7 +597,6 @@
     cursor: pointer;
     margin: 0;
     overflow: visible;
-    text-decoration: none !important;
     text-align: center;
     width: auto;
     -webkit-border-radius: 2px;
@@ -714,57 +700,53 @@
       style="display: none">
       <div class="LI-profile-badge-header LI-name-container LI-row">
         <div class="LI-col">
-          <div class="LI-profile-pic-container">
-            <img
-              src="https://media-exp1.licdn.com/dms/image/C4D03AQGRuBGn4RfhEA/profile-displayphoto-shrink_400_400/0?e=1603929600&v=beta&t=AIDYTb3bOY-B9hLZY7-DWw8opw4zT5XY-hE5uU54FI4"
-              class="LI-profile-pic"
-              alt="Marcelo Tokarnia"
-              width="200"
-              height="200" />
-          </div>
+          <a href={profileUrl} target="_blank" rel="noopener noreferrer">
+            <div class="LI-profile-pic-container">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C4D03AQGRuBGn4RfhEA/profile-displayphoto-shrink_400_400/0?e=1603929600&v=beta&t=AIDYTb3bOY-B9hLZY7-DWw8opw4zT5XY-hE5uU54FI4"
+                class="LI-profile-pic"
+                alt="Marcelo Tokarnia"
+                width="200"
+                height="200" />
+            </div>
+          </a>
         </div>
         <div class="LI-col LI-header">
-          <div class="LI-name">
-            <a
-              href="https://se.linkedin.com/in/marcelo-tokarnia-5a1ab2128"
-              target="_blank"
-              rel="noopener noreferrer">
-              Marcelo Tokarnia
-            </a>
-          </div>
-          <div class="LI-title">Senior Software Engineer</div>
+          <a href={profileUrl} target="_blank" rel="noopener noreferrer">
+            <div class="LI-name">Marcelo Tokarnia</div>
+            <div class="LI-title">Senior Software Engineer</div>
+          </a>
         </div>
       </div>
       <ul class="LI-more-info">
         <li class="LI-field">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C560BAQHOIyXU-6CEgA/company-logo_200_200/0?e=1606348800&amp;v=beta&amp;t=V7w8LGNK9uhzpD-8Hinpn-PPktLND3KjaK83M37XsCs"
-            class="LI-field-icon"
-            alt="Klarna" />
+
           <a
-            href="https://www.linkedin.com/company/klarna?trk=profile-badge-company"
+            href="https://www.linkedin.com/company/klarna"
             target="_blank"
             rel="noopener noreferrer">
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C560BAQHOIyXU-6CEgA/company-logo_200_200/0?e=1606348800&amp;v=beta&amp;t=V7w8LGNK9uhzpD-8Hinpn-PPktLND3KjaK83M37XsCs"
+              class="LI-field-icon"
+              alt="Klarna" />
             Working at Klarna since 2018
           </a>
         </li>
         <li class="LI-field">
-          <img
-            src="https://media-exp1.licdn.com/dms/image/C4E0BAQFCUZQ0yBrV_w/company-logo_200_200/0?e=1606348800&amp;v=beta&amp;t=EUeIZR6JY53oxmu3vFmNvQCvnV0O7yGYqi2F55Rsf9k"
-            class="LI-field-icon"
-            alt="Instituto Tecnológico de Aeronáutica - ITA" />
           <a
             href="https://www.linkedin.com/edu/instituto-tecnol%C3%B3gico-de-aeron%C3%A1utica---ita-21195?trk=profile-badge-school">
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C4E0BAQFCUZQ0yBrV_w/company-logo_200_200/0?e=1606348800&amp;v=beta&amp;t=EUeIZR6JY53oxmu3vFmNvQCvnV0O7yGYqi2F55Rsf9k"
+              class="LI-field-icon"
+              alt="Instituto Tecnológico de Aeronáutica - ITA" />
             Graduated at ITA in 2013
           </a>
         </li>
       </ul>
       <div class="LI-footer LI-row">
-        <a href="https://se.linkedin.com/in/marcelo-tokarnia-5a1ab2128" class="LI-view-profile">
-          See Past Experiences
-        </a>
+        <a href={profileUrl} class="LI-view-profile">See Past Experiences</a>
         <span class="LI-logo">
-          <a href="https://se.linkedin.com/in/marcelo-tokarnia-5a1ab2128">
+          <a href={profileUrl}>
             <img
               src="https://static-exp1.licdn.com/scds/common/u/images/logos/linkedin/logo_linkedin_93x21_v2.png"
               alt="LinkedIn"
