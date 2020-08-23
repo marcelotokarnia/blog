@@ -14,7 +14,7 @@
 <script>
   import 'highlight.js/styles/vs.css'
   import Tag from '@components/Tag.svelte'
-  import Github from '@components/GithubIcon.svelte'
+  import Github from '@components/GithubButton.svelte'
   import KoFi from '@components/KoFi.svelte'
   export let post
   const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' })
@@ -80,27 +80,6 @@
   .flex {
     display: flex;
   }
-
-  .card-button {
-    transition: background-color 0.15s ease-in-out;
-    text-align: center;
-    text-decoration: none;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    background-color: #111;
-    color: #f4f4f4;
-    align-items: center;
-    display: inline-flex;
-    border-radius: 0.25rem;
-    border-style: none;
-    border-width: 0;
-  }
-
-  .card-content {
-    font-size: 0.875rem;
-    margin-left: 1rem;
-    padding-right: 0.5rem;
-  }
 </style>
 
 <svelte:head>
@@ -120,12 +99,7 @@
 <footer>
   <div class="fl flex">
     <KoFi />
-    <a
-      class="card-button"
-      href="https://github.com/marcelotokarnia/blog/edit/master/src/tstips/{post.slug}.md">
-      <Github />
-      <span class="card-content">Edit this page</span>
-    </a>
+    <Github text="Edit this page" path="/blog/edit/master/src/tstips/{post.slug}.md" />
   </div>
   <div class="fr flex">
     <img class="author-pic" alt={post.author} src={post.authorPic} />

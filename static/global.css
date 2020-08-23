@@ -23,7 +23,12 @@ h1 {
 }
 
 a {
+  text-decoration: none;
   color: inherit;
+}
+
+.padded-content {
+  margin-bottom: 13px !important;
 }
 
 code {

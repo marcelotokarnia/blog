@@ -34,7 +34,7 @@
   [aria-current]::after {
     position: absolute;
     content: '';
-    width: calc(100% - 1em);
+    width: calc(100% - 2em);
     height: 2px;
     background-color: rgb(255, 62, 0);
     display: block;
@@ -43,7 +43,7 @@
 
   a {
     text-decoration: none;
-    padding: 1em 0.5em;
+    padding: 1em;
     display: block;
   }
 
@@ -55,11 +55,13 @@
 <nav>
   <ul>
     <li>
-      <a aria-current={segment === undefined ? 'page' : undefined} href=".">About</a>
+      <a aria-current={segment === undefined ? 'page' : undefined} href=".">🏡Home</a>
     </li>
 
     <li>
-      <a rel="prefetch" aria-current={segment === 'blog' ? 'page' : undefined} href="blog">Blog</a>
+      <a rel="prefetch" aria-current={segment === 'blog' ? 'page' : undefined} href="blog">
+        Coding Blog
+      </a>
     </li>
 
     <li>
