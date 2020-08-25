@@ -1,6 +1,6 @@
 ---
 title: My first Postgis project gave me headaches for 2 years 🤦🏻‍♂️ but I learned a lot 🤷🏻‍♀️
-summary: A journey trying to put live my first Postgis project live
+summary: A journey trying to put my first Postgis project live
 date: 2020-08-27
 author: Marcelo Tokarnia
 authorPic: https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,g_face:center,r_max,h_150,w_150,f_auto,q_auto/v1590609457/profile/A54I1782_qa84qz.jpg
