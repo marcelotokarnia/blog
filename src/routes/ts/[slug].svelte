@@ -80,6 +80,13 @@
   .flex {
     display: flex;
   }
+
+  :global(a) {
+    color: #0a0aa9;
+  }
+  :global(a:hover) {
+    color: #1a7979;
+  }
 </style>
 
 <svelte:head>
