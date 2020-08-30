@@ -1,14 +1,36 @@
 <script context="module">
+  import { assocPath, pathOr, append } from 'ramda'
   export function preload({ params, query }) {
     return this.fetch(`blog.json`)
       .then(r => r.json())
-      .then(posts => ({ posts }))
+      .then(posts => {
+        const postsGroup = posts.reduce((acc, post) => {
+          const dt = new Date(post.date)
+          const month = dt.getMonth()
+          const year = dt.getFullYear()
+          return assocPath([year, month], append(post, pathOr([], [year, month], acc)), acc)
+        }, {})
+        return { postsGroup }
+      })
   }
 </script>
 
 <script>
-  export let posts
-  const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' })
+  const monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ]
+  export let postsGroup
 </script>
 
 <style>
@@ -36,12 +58,17 @@
 <h1>Most recent blog posts</h1>
 
 <ul>
-  {#each posts as post}
-    <li>
-      <a rel="prefetch" href="blog/{post.slug}">
-        <span>{dateFormater.format(post.date)}: {post.title}</span>
-        <p class="summary">{post.summary}</p>
-      </a>
-    </li>
+  {#each Object.keys(postsGroup) as year}
+    {#each Object.keys(postsGroup[year]).sort((a, b) => b - a) as month}
+      <h2>{year} - {monthNames[month]}</h2>
+      {#each postsGroup[year][month] as post}
+        <li>
+          <a rel="prefetch" href="blog/{post.slug}">
+            <span>{post.title}</span>
+            <p class="summary">{post.summary}</p>
+          </a>
+        </li>
+      {/each}
+    {/each}
   {/each}
 </ul>
