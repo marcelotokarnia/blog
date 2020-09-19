@@ -26,6 +26,19 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+a:visited {
+  opacity: 0.8;
+}
+
+.border-element {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #38444d !important;
+}
+
 .padded-content {
   margin-bottom: 13px !important;
 }
@@ -33,14 +46,56 @@ a {
 code {
   font-family: menlo, inconsolata, monospace;
   font-size: calc(1em - 2px);
-  color: #555;
-  background-color: #f0f0f0;
+  color: #8899a6;
+  background-color: #192734;
   padding: 0.2em 0.4em;
   border-radius: 2px;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #38444d !important;
+}
+
+body {
+  background-color: #16202c;
+  color: #ffffff;
+}
+a {
+  color: #1fa1f2;
+}
+
+.top-menu {
+  background-color: #192734;
+  color: #8899a6;
 }
 
 @media (min-width: 400px) {
   body {
     font-size: 18px;
   }
+}
+
+.content h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.content pre {
+  opacity: 0.8;
+  background-color: #8899a6;
+  padding: 0.5em;
+  border-radius: 2px;
+  overflow-x: auto;
+}
+
+.content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.content ul {
+  line-height: 1.5;
+}
+
+.content li {
+  margin: 0 0 0.5em 0;
 }

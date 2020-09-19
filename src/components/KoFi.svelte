@@ -28,7 +28,7 @@
   .btn-container {
     margin: 0.5rem;
     padding: 0.5rem;
-    background-color: #111;
+    background-color: #8899a6;
     border-radius: 0.25rem;
   }
   span.kofitext {
@@ -50,7 +50,6 @@
     text-decoration: none;
   }
   a.kofi-button {
-    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
     line-height: 36px !important;
     min-width: 150px;
     display: inline-block !important;

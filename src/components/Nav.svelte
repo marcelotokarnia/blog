@@ -36,7 +36,7 @@
     content: '';
     width: calc(100% - 2em);
     height: 2px;
-    background-color: rgb(255, 62, 0);
+    background-color: lightskyblue;
     display: block;
     bottom: -1px;
   }
@@ -45,7 +45,6 @@
     text-decoration: none;
     padding: 1em;
     display: block;
-    color: #000;
   }
 
   .hide {
@@ -53,7 +52,7 @@
   }
 </style>
 
-<nav>
+<nav class="top-menu">
   <ul>
     <li>
       <a aria-current={segment === undefined ? 'page' : undefined} href=".">🏡Home</a>

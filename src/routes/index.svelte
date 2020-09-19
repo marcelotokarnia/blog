@@ -68,12 +68,10 @@
     <Github text="My public Matrix" className="padded-content" />
     <div class="padded-content split">
       <a target="_blank" href="https://resume.tokks.tech" rel="noopener noreferrer">
-        📕
-        <Tag name={'Skills & Experiences'} size="large" />
+        <Tag name={'📕 Skills & Experiences'} size="large" />
       </a>
       <a target="_blank" href="https://projects.tokks.tech" rel="noopener noreferrer">
-        🔨
-        <Tag name="Spare time Projects" size="large" />
+        <Tag name="🔨 Spare time Projects" size="large" />
       </a>
     </div>
 

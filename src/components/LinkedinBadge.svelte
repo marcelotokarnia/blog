@@ -395,24 +395,24 @@
     border: 0;
   }
   .LI-badge-container.horizontal.light a {
-    color: #008cc9;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light a:hover,
   .LI-badge-container.horizontal.light a:focus {
-    color: #005e93;
+    opacity: 0.8;
   }
   .LI-badge-container.horizontal.light a:visited {
-    color: #008cc9;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light a:active {
-    color: #005e93;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light a:visited:hover,
   .LI-badge-container.horizontal.light a:visited:focus {
-    color: #005e93;
+    opacity: 0.8;
   }
   .LI-badge-container.horizontal.light a:visited:active {
-    color: #005e93;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light div.alert img {
     display: none;
@@ -423,18 +423,20 @@
   }
   .LI-badge-container.horizontal.light div.alert a:hover,
   .LI-badge-container.horizontal.light div.alert a:focus {
+    opacity: 0.8;
   }
   .LI-badge-container.horizontal.light div.alert a:active {
-    color: #005e93;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light div.alert a:visited:hover,
   .LI-badge-container.horizontal.light div.alert a:visited:focus {
-    color: #005e93;
+    opacity: 0.8;
   }
   .LI-badge-container.horizontal.light div.alert a:visited:active {
-    color: #005e93;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light div.alert:hover a {
+    opacity: 0.8;
   }
   .LI-badge-container.horizontal.light div.alert ul {
     margin: 0 21px 5px 7px;
@@ -483,78 +485,75 @@
     margin-bottom: 10px;
     font-size: 13px;
     line-height: 17px;
-    color: #737679;
-    color: rgba(0, 0, 0, 0.55);
+    color: white;
     font-weight: normal;
   }
   .LI-badge-container.horizontal.light .LI-field a {
     font-size: 13px;
     line-height: 17px;
-    color: #737679;
-    color: rgba(0, 0, 0, 0.55);
+    color: white;
     font-weight: normal;
     vertical-align: middle;
   }
   .LI-badge-container.horizontal.light .LI-field a:hover,
   .LI-badge-container.horizontal.light .LI-field a:focus {
-    color: #006fa6;
+    opacity: 0.8;
     cursor: pointer;
   }
   .ie .LI-badge-container.horizontal.light .LI-field a:hover,
   .ie .LI-badge-container.horizontal.light .LI-field a:focus {
+    opacity: 0.8;
     cursor: hand;
   }
   .LI-badge-container.horizontal.light .LI-field a:active {
-    color: #005e93;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light .LI-field a:visited:hover,
   .LI-badge-container.horizontal.light .LI-field a:visited:focus {
-    color: #005e93;
+    opacity: 0.8;
   }
   .LI-badge-container.horizontal.light .LI-field a:visited:active {
-    color: #005e93;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light .LI-title {
     display: block;
     font-size: 14px;
     font-weight: normal;
     line-height: 16px;
-    color: #232629;
-    color: rgba(0, 0, 0, 0.85);
+    color: white;
   }
   .LI-badge-container.horizontal.light .LI-name {
     display: block;
     font-size: 18px;
     line-height: 22px;
-    color: #434649;
-    color: rgba(0, 0, 0, 0.7);
+    color: white;
     font-weight: bold;
   }
   .LI-badge-container.horizontal.light .LI-name a {
     font-size: 18px;
     line-height: 22px;
-    color: #434649;
-    color: rgba(0, 0, 0, 0.7);
+    color: white;
     font-weight: bold;
   }
   .LI-badge-container.horizontal.light .LI-name a:hover,
   .LI-badge-container.horizontal.light .LI-name a:focus {
-    color: #006fa6;
+    opacity: 0.8;
     cursor: pointer;
   }
   .ie .LI-badge-container.horizontal.light .LI-name a:hover,
   .ie .LI-badge-container.horizontal.light .LI-name a:focus {
+    opacity: 0.8;
     cursor: hand;
   }
   .LI-badge-container.horizontal.light .LI-name a:active {
-    color: #005e93;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light .LI-name a:visited:hover,
   .LI-badge-container.horizontal.light .LI-name a:visited:focus {
-    color: #005e93;
+    opacity: 0.8;
   }
   .LI-badge-container.horizontal.light .LI-name a:visited:active {
-    color: #005e93;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light .LI-row:after {
     content: '\0020';
@@ -628,15 +627,15 @@
     -webkit-box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
     -moz-box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
     box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
-    border-color: #0077b5;
-    color: #0077b5;
+    border-color: #1fa1f2;
+    opacity: 0.8;
   }
   .LI-badge-container.horizontal.light .LI-view-profile:active {
     -webkit-box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
     -moz-box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
     box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
-    border-color: #005e93;
-    color: #005e93;
+    border-color: #1fa1f2;
+    color: #1fa1f2;
   }
   .LI-badge-container.horizontal.light {
     width: 330px;
@@ -694,10 +693,7 @@
 
 <div class={`LI-profile-badge ${className}`}>
   <div>
-    <div
-      dir="ltr"
-      class="LI-badge-container-horizontal-light LI-badge-container horizontal light large"
-      style="display: none">
+    <div dir="ltr" class="border-element LI-badge-container horizontal light large">
       <div class="LI-profile-badge-header LI-name-container LI-row">
         <div class="LI-col">
           <a href={profileUrl} target="_blank" rel="noopener noreferrer">
@@ -748,7 +744,7 @@
         <span class="LI-logo">
           <a href={profileUrl}>
             <img
-              src="https://static-exp1.licdn.com/scds/common/u/images/logos/linkedin/logo_linkedin_93x21_v2.png"
+              src="https://static-exp1.licdn.com/scds/common/u/images/logos/linkedin/logo_linkedin_flat_white_93x21.png"
               alt="LinkedIn"
               class="LI-icon" />
           </a>
