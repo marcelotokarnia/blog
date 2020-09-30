@@ -1,9 +1,17 @@
 <script>
+  import { onMount } from 'svelte'
+
   export let id
-  var disqus_config = function() {
-    this.page.url = window.location.href
-    this.page.identifier = id
-  }
+
+  $: window &&
+    window.DISQUS &&
+    window.DISQUS.reset({
+      reload: true,
+      config: function() {
+        this.page.url = window.location.href
+        this.page.identifier = id
+      },
+    })
 </script>
 
 <svelte:head>
