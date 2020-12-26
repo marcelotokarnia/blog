@@ -9,6 +9,7 @@ import config from 'sapper/config/rollup'
 import pkg from './package.json'
 import autoPreprocess from 'svelte-preprocess'
 import typescript from 'rollup-plugin-typescript2'
+import image from '@rollup/plugin-image'
 import babel from '@rollup/plugin-babel'
 import alias from 'rollup-plugin-alias'
 
@@ -37,6 +38,7 @@ export default {
     output: config.client.output(),
     plugins: [
       aliases,
+      image(),
       replace({
         'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode),
@@ -67,6 +69,7 @@ export default {
     output: config.server.output(),
     plugins: [
       aliases,
+      image(),
       markdown(),
       glob(),
       replace({
@@ -96,6 +99,7 @@ export default {
     output: config.serviceworker.output(),
     plugins: [
       resolve(),
+      image(),
       replace({
         'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode),

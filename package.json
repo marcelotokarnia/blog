@@ -12,6 +12,7 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
+    "@rollup/plugin-image": "^2.0.6",
     "compression": "^1.7.1",
     "highlight.js": "^10.1.2",
     "marked": "^1.1.0",
@@ -19,7 +20,8 @@
     "ramda": "^0.27.1",
     "rss-generator": "^0.0.3",
     "serve": "^11.3.1",
-    "sirv": "^0.4.0"
+    "sirv": "^0.4.0",
+    "tachyons": "^4.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

@@ -3,6 +3,8 @@
   export let size = 'small'
 </script>
 
+<span class={size}>{name}</span>
+
 <style>
   span {
     font-size: 0.75rem;
@@ -13,8 +15,6 @@
     border-radius: 9999px;
   }
   .large {
-    font-size: 0.875rem;
+    font-size: 1.5rem;
   }
 </style>
-
-<span class={size}>{name}</span>
