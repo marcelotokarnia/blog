@@ -67,8 +67,10 @@
 <div class="flex">
   <div class="flex6">
     <Map zoom={14} {center}>
-      {#each paths as { path, isActive }}
-        <Polyline {path} {isActive} />
+      {#each paths as { path, isActive, name }}
+        <Polyline {path} {isActive}
+          ><InfoWindow component={BasicInfoWindow} props={{ title: name }} /></Polyline
+        >
       {/each}
       {#each waypoints as { name, position, bounceMs }}
         <Marker {...position} title={name} {bounceMs}

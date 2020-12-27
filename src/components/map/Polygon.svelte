@@ -1,7 +1,6 @@
 <script>
   import { getContext, onDestroy } from 'svelte'
-  import { mapKey } from './Map.svelte'
-  import { markerKey } from './Marker.svelte'
+  import { mapKey, targetKey } from './Map.svelte'
   import { v4 as uuid } from 'uuid'
   import { decodePath } from '../../utils/map'
 
@@ -11,10 +10,8 @@
 
   const { getMap } = getContext(mapKey)
   const map = getMap()
-  const { getMarker } = getContext(markerKey)
-  const marker = getMarker()
-
-  console.log(decodePath(paths))
+  const { getTarget } = getContext(targetKey)
+  const target = getTarget()
 
   const polygon = new google.maps.Polygon({
     paths: decodePath(paths),
@@ -25,10 +22,10 @@
     fillOpacity: 0.35,
   })
 
-  if (marker) {
-    const eventListener = marker.addListener('click', () => {
+  if (target) {
+    const eventListener = target.addListener('click', () => {
       if (autoRemove) {
-        marker.registerRemoveKey(id, polygon)
+        target.registerRemoveKey(id, polygon)
       }
       polygon.setMap(map)
     })

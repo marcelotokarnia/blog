@@ -1,6 +1,4 @@
 <script>
-  import { identical } from 'ramda'
-
   import { setContext, onMount } from 'svelte'
   import { mapKey } from './Map.svelte'
 

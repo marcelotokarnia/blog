@@ -1,5 +1,6 @@
 <script context="module">
   export const mapKey = {}
+  export const targetKey = {}
 </script>
 
 <script>

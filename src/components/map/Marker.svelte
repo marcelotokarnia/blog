@@ -1,12 +1,6 @@
-<script context="module">
-  export const markerKey = {}
-</script>
-
 <script>
-  import { identical } from 'ramda'
-
   import { getContext, setContext, onDestroy } from 'svelte'
-  import { mapKey } from './Map.svelte'
+  import { mapKey, targetKey } from './Map.svelte'
 
   const { getMap } = getContext(mapKey)
   const map = getMap()
@@ -35,8 +29,8 @@
     delete marker.toRemoveKeys[id]
   }
 
-  setContext(markerKey, {
-    getMarker: () => marker,
+  setContext(targetKey, {
+    getTarget: () => marker,
   })
 
   onDestroy(() => marker.setMap(null))

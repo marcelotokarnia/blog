@@ -1,7 +1,6 @@
 <script>
   import { getContext, onDestroy } from 'svelte'
-  import { mapKey } from './Map.svelte'
-  import { markerKey } from './Marker.svelte'
+  import { mapKey, targetKey } from './Map.svelte'
   import { v4 as uuid } from 'uuid'
 
   export let component
@@ -13,8 +12,8 @@
 
   const { getMap } = getContext(mapKey)
   const map = getMap()
-  const { getMarker } = getContext(markerKey)
-  const marker = getMarker()
+  const { getTarget } = getContext(targetKey)
+  const target = getTarget()
 
   const infoWindow = new google.maps.InfoWindow({
     content: `<info-window class="${randomClass}"></info-window>`,
@@ -24,14 +23,15 @@
 
   const closeListener = infoWindow.addListener('closeclick', () => {
     map.deregisterCloseOnClick(id)
-    const toRemove = Object.values(marker.toRemoveKeys)
+    const toRemove = Object.values(target.toRemoveKeys)
     toRemove.forEach(e => e.setMap(null))
-    marker.toRemoveKeys = {}
+    target.toRemoveKeys = {}
   })
 
-  const eventListener = marker.addListener('click', () => {
+  const eventListener = target.addListener('click', e => {
     map.closeAll()
-    infoWindow.open(map, marker)
+    infoWindow.setPosition(e.latLng)
+    infoWindow.open(map)
     map.registerCloseOnClick(id, infoWindow)
 
     setTimeout(() => {
