@@ -3,6 +3,61 @@
   const profileUrl: string = 'https://www.linkedin.com/in/marcelo-tokarnia-5a1ab2128/'
 </script>
 
+<div class={`LI-profile-badge ${className}`}>
+  <div>
+    <div dir="ltr" class="border-element LI-badge-container horizontal light large">
+      <div class="LI-profile-badge-header LI-name-container LI-row">
+        <div class="LI-col LI-header">
+          <a href={profileUrl} target="_blank" rel="noopener noreferrer">
+            <div class="LI-name">Marcelo Tokarnia</div>
+            <div class="LI-title">Senior Software Engineer</div>
+          </a>
+        </div>
+      </div>
+      <ul class="LI-more-info">
+        <li class="LI-field">
+          <a
+            href="https://www.linkedin.com/company/olaisaac"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={`https://res.cloudinary.com/marcelotokarnia/image/upload/v1618658830/blog/isaac_nnm7wj.jpg`}
+              class="LI-field-icon"
+              alt="Klarna"
+            />
+            Working at Isaac since 2020
+          </a>
+        </li>
+        <li class="LI-field">
+          <a
+            href="https://www.linkedin.com/edu/instituto-tecnol%C3%B3gico-de-aeron%C3%A1utica---ita-21195?trk=profile-badge-school"
+          >
+            <img
+              src="https://res.cloudinary.com/marcelotokarnia/image/upload/v1618659119/blog/ita_ytso2m.png"
+              class="LI-field-icon"
+              alt="Instituto Tecnológico de Aeronáutica - ITA"
+            />
+            Graduated at ITA in 2013
+          </a>
+        </li>
+      </ul>
+      <div class="LI-footer LI-row">
+        <a href={profileUrl} class="LI-view-profile">See Past Experiences</a>
+        <span class="LI-logo">
+          <a href={profileUrl}>
+            <img
+              src="https://static-exp1.licdn.com/scds/common/u/images/logos/linkedin/logo_linkedin_flat_white_93x21.png"
+              alt="LinkedIn"
+              class="LI-icon"
+            />
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <style>
   .LI-badge-container.horizontal.light {
     /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
@@ -690,66 +745,3 @@
     }
   }
 </style>
-
-<div class={`LI-profile-badge ${className}`}>
-  <div>
-    <div dir="ltr" class="border-element LI-badge-container horizontal light large">
-      <div class="LI-profile-badge-header LI-name-container LI-row">
-        <div class="LI-col">
-          <a href={profileUrl} target="_blank" rel="noopener noreferrer">
-            <div class="LI-profile-pic-container">
-              <img
-                src="https://media-exp1.licdn.com/dms/image/C4D03AQGRuBGn4RfhEA/profile-displayphoto-shrink_400_400/0?e=1603929600&v=beta&t=AIDYTb3bOY-B9hLZY7-DWw8opw4zT5XY-hE5uU54FI4"
-                class="LI-profile-pic"
-                alt="Marcelo Tokarnia"
-                width="200"
-                height="200" />
-            </div>
-          </a>
-        </div>
-        <div class="LI-col LI-header">
-          <a href={profileUrl} target="_blank" rel="noopener noreferrer">
-            <div class="LI-name">Marcelo Tokarnia</div>
-            <div class="LI-title">Senior Software Engineer</div>
-          </a>
-        </div>
-      </div>
-      <ul class="LI-more-info">
-        <li class="LI-field">
-
-          <a
-            href="https://www.linkedin.com/company/klarna"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img
-              src="https://media-exp1.licdn.com/dms/image/C560BAQHOIyXU-6CEgA/company-logo_200_200/0?e=1606348800&amp;v=beta&amp;t=V7w8LGNK9uhzpD-8Hinpn-PPktLND3KjaK83M37XsCs"
-              class="LI-field-icon"
-              alt="Klarna" />
-            Working at Klarna since 2018
-          </a>
-        </li>
-        <li class="LI-field">
-          <a
-            href="https://www.linkedin.com/edu/instituto-tecnol%C3%B3gico-de-aeron%C3%A1utica---ita-21195?trk=profile-badge-school">
-            <img
-              src="https://media-exp1.licdn.com/dms/image/C4E0BAQFCUZQ0yBrV_w/company-logo_200_200/0?e=1606348800&amp;v=beta&amp;t=EUeIZR6JY53oxmu3vFmNvQCvnV0O7yGYqi2F55Rsf9k"
-              class="LI-field-icon"
-              alt="Instituto Tecnológico de Aeronáutica - ITA" />
-            Graduated at ITA in 2013
-          </a>
-        </li>
-      </ul>
-      <div class="LI-footer LI-row">
-        <a href={profileUrl} class="LI-view-profile">See Past Experiences</a>
-        <span class="LI-logo">
-          <a href={profileUrl}>
-            <img
-              src="https://static-exp1.licdn.com/scds/common/u/images/logos/linkedin/logo_linkedin_flat_white_93x21.png"
-              alt="LinkedIn"
-              class="LI-icon" />
-          </a>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
