@@ -1,13 +1,11 @@
 ---
-title: Best VSCode Extensions
+title: Top 7 extensões do VSCode que todo Fullstack deveria saber
 summary: In my previous 5 or so years of coding, I've been mainly using VSCode as my preferred IDE, and to power it up even further, I've been using a few steroids, I mean, extensions I would like to share.
 date: 2021-04-22
 author: Marcelo Tokarnia
 authorPic: https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,g_face:center,r_max,h_150,w_150,f_auto,q_auto/v1590609457/profile/A54I1782_qa84qz.jpg
 tags: VSCode,Extensions,IDE
 ---
-
-# Top 7 extensões do VSCode que todo Fullstack deveria saber
 
 Olá, eu me chamo [Marcelo Tokarnia][:linkedin-marcelo] e sou Engenheiro de Software no [isaac][:linkedin-isaac]. Trabalho na área a cerca de 10 anos, metade dos quais, venho usando [VSCode][:vscode] como minha IDE de preferência para codar.
 
