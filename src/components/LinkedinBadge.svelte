@@ -508,9 +508,6 @@
   .LI-badge-container.horizontal.light {
     font-family: sans-serif;
   }
-  .LI-badge-container.horizontal.light .LI-profile-pic {
-    border-radius: 50%;
-  }
   .LI-badge-container.horizontal.light .LI-view-profile {
     max-width: 240px;
     white-space: inherit;
@@ -531,10 +528,6 @@
   .LI-badge-container.horizontal.light .LI-name-container {
     margin: 25px 20px 0px 25px;
     display: flex;
-  }
-  .LI-badge-container.horizontal.light .LI-profile-pic-container {
-    margin-right: 10px;
-    padding-bottom: 10px;
   }
   .LI-badge-container.horizontal.light .LI-field {
     margin-bottom: 10px;
@@ -695,10 +688,6 @@
   .LI-badge-container.horizontal.light {
     width: 330px;
   }
-  .LI-badge-container.horizontal.light .LI-profile-pic {
-    width: 70px;
-    height: 70px;
-  }
   .LI-badge-container.horizontal.light .LI-title {
     padding-top: 5px;
   }
@@ -716,11 +705,6 @@
     .LI-badge-container.horizontal.light .LI-name a {
       font-size: 16px;
       line-height: 20px;
-    }
-    .LI-badge-container.horizontal.light .LI-profile-pic {
-      width: 50px;
-      height: 50px;
-      margin: 6px auto 0 auto;
     }
     .LI-badge-container.horizontal.light .LI-title {
       padding-top: 5px;

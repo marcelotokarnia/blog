@@ -33,6 +33,28 @@
   export let postsGroup
 </script>
 
+<svelte:head>
+  <title>Blog posts</title>
+</svelte:head>
+
+<h1>Most recent blog posts</h1>
+
+<ul>
+  {#each Object.keys(postsGroup).sort((a, b) => b - a) as year}
+    {#each Object.keys(postsGroup[year]).sort((a, b) => b - a) as month}
+      <h2>{year} - {monthNames[month]}</h2>
+      {#each postsGroup[year][month] as post}
+        <li>
+          <a rel="prefetch" href="blog/{post.slug}">
+            <span>{post.title}</span>
+            <p class="summary">{post.summary}</p>
+          </a>
+        </li>
+      {/each}
+    {/each}
+  {/each}
+</ul>
+
 <style>
   ul {
     margin: 0 0 1em 0;
@@ -50,25 +72,3 @@
     text-decoration: underline;
   }
 </style>
-
-<svelte:head>
-  <title>Blog posts</title>
-</svelte:head>
-
-<h1>Most recent blog posts</h1>
-
-<ul>
-  {#each Object.keys(postsGroup) as year}
-    {#each Object.keys(postsGroup[year]).sort((a, b) => b - a) as month}
-      <h2>{year} - {monthNames[month]}</h2>
-      {#each postsGroup[year][month] as post}
-        <li>
-          <a rel="prefetch" href="blog/{post.slug}">
-            <span>{post.title}</span>
-            <p class="summary">{post.summary}</p>
-          </a>
-        </li>
-      {/each}
-    {/each}
-  {/each}
-</ul>
