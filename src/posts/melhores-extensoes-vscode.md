@@ -11,7 +11,11 @@ Muitos programadores utilizam diariamente IDEs (Integrated Development Environme
 
 Muitas IDEs existentes no mercado, são construídas com o foco em uma linguagem ou nicho, como por exemplo [GoLand][:goland] (focada em Golang), [PyCharm][:pycharm] (focada em Python) ou [Eclipse][:eclipse] (focada em Java). 
 
-VSCode é uma IDE open-source desenvolvida pela Microsoft, [atualmente a mais popular do mercado][:stack-overflow-annual-survey], especialmente entre Web Developers. Diferentemente da maioria das outras IDEs, o VSCode foi desenvolvido com a premissa de atender múltiplos nichos, oferecendo ferramentas básicas para todos os ambientes e também a possibilidade de ter essas funcionalidades extendidas pela comunidade para atender necessidades específicas. Hoje já existe uma grande gama de extensões que podem ser acessadas pela própria IDE.
+[VSCode][:vscode] é uma IDE open-source desenvolvida pela Microsoft, e diferentemente da maioria, foi desenvolvida com a premissa de atender múltiplos nichos, oferecendo ferramentas básicas para todos os ambientes e também a possibilidade de ter essas funcionalidades extendidas pela comunidade para atender necessidades específicas. Tornando-se assim, [a mais popular IDE do mercado][:stack-overflow-annual-survey], especialmente entre Web Developers.
+
+Aqui no [isaac][:linkedin-isaac] não é diferente, vários desenvolvedores optaram pelo VSCode para o desenvolvimento do nosso software de gestão escolar do futuro. E um dos motivos principais dessa preferência é o poder das extensões, nos garantindo a agilidade de desenvolvimento que precisamos nessa etapa inicial da empresa. 
+
+Pela própria IDE, é possível acessar o Marketplace de extensões e começar a usá-las com um clique.
 
 <div style="text-align: center">
   <img src="https://res.cloudinary.com/marcelotokarnia/image/upload/c_scale,w_600/v1619105623/blog/vscodeextensions_qzsdg2.png" />
