@@ -1,19 +1,17 @@
 ---
 title: Top 7 extensões do VSCode que todo Fullstack deveria saber
-summary: In my previous 5 or so years of coding, I've been mainly using VSCode as my preferred IDE, and to power it up even further, I've been using a few steroids, I mean, extensions I would like to share.
+summary: Nos meus últimos 5 anos de código, venho usando, principalmente o VSCode como IDE. E para turbiná-la ainda mais, uso alguns esteróides, digo, extensões que eu gostaria de compartilhar.
 date: 2021-04-22
 author: Marcelo Tokarnia
 authorPic: https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,g_face:center,r_max,h_150,w_150,f_auto,q_auto/v1590609457/profile/A54I1782_qa84qz.jpg
 tags: VSCode,Extensions,IDE
 ---
 
-Olá, eu me chamo [Marcelo Tokarnia][:linkedin-marcelo] e sou Engenheiro de Software no [isaac][:linkedin-isaac]. Trabalho na área a cerca de 10 anos, metade dos quais, venho usando [VSCode][:vscode] como minha IDE de preferência para codar.
-
-VSCode é uma IDE (Integrated Development Environment) open-source desenvolvida pela Microsoft, com o intuito de facilitar a vida de programadores, com syntax highlight, autocompletes, formatação de código e muito mais.
+Muitos programadores utilizam diariamente IDEs (Integrated Development Environment). IDEs são basicamente editores de texto "com super-poderes", que fornecem funcionalidades auxiliares na arte de programar, como por exemplo: autocomplete, documentação inline, syntax highlight, formatação de código, debuggers e muito mais.
 
 Muitas IDEs existentes no mercado, são construídas com o foco em uma linguagem ou nicho, como por exemplo [GoLand][:goland] (focada em Golang), [PyCharm][:pycharm] (focada em Python) ou [Eclipse][:eclipse] (focada em Java). 
 
-O VSCode foi desenvolvido com a premissa de atender múltiplos nichos, oferecendo ferramentas básicas para todos os ambientes e também a possibilidade de ter essas funcionalidades extendidas pela comunidade. Hoje existe uma grande gama de extensões disponibilizadas pela comunidade, que podem ser acessadas pela própria IDE.
+VSCode é uma IDE open-source desenvolvida pela Microsoft, [atualmente a mais popular do mercado][:stack-overflow-annual-survey], especialmente entre Web Developers. Diferentemente da maioria das outras IDEs, o VSCode foi desenvolvido com a premissa de atender múltiplos nichos, oferecendo ferramentas básicas para todos os ambientes e também a possibilidade de ter essas funcionalidades extendidas pela comunidade para atender necessidades específicas. Hoje já existe uma grande gama de extensões que podem ser acessadas pela própria IDE.
 
 <div style="text-align: center">
   <img src="https://res.cloudinary.com/marcelotokarnia/image/upload/c_scale,w_600/v1619105623/blog/vscodeextensions_qzsdg2.png" />
@@ -33,7 +31,7 @@ Essa extensão combina os poderes do Git com a interface gráfica do VSCode, fac
 
 Além de ser altamente customizável, facilitando alterar / remover features que não lhe agradem.
 
-A feature mais usada dessa extensão costuma ser a visualização rápida da última modificação de cada linha, como na screenshot acima. É possível facilmente ver quando e quem alterou a linha em foco por último e com hover, abrir essa popup com ainda mais informação, como o hash e body do commit, PR e foto do autor, assim você consegue facilmente parabenizá-lo pelo ótimo trabalho
+A feature mais usada dessa extensão costuma ser a visualização rápida da última modificação de cada linha, como na screenshot acima. É possível facilmente ver quando e quem alterou a linha em foco por último e com hover, abrir essa popup com ainda mais informação, como o hash e body do commit, PR e foto do autor, assim você consegue facilmente parabenizá-lo pelo ótimo trabalho.
 
 - [Prettier (esbenp.prettier-vscode)][:prettier]
 
@@ -93,16 +91,30 @@ E também coloca um hint de tamanho aproximado de cada pacote no seu código, pa
 
 ## Conclusão
 
-O mercado de extensões é muito grande e existem muitas outras extensões bastante interessantes que podem ser usadas em vários contextos diferentes.
+Algumas pessoas mais "puristas" podem argumentar que todas essas informações podem ser encontradas em outras fontes, por exemplo: 
+  - erros de lint não precisam ser apontados na minha tela, eu posso rodar o linter na linha de comando
+  - o histórico do git não precisa ficar no meio do meu código, eu posso rodar na linha de comando / abrir o repositório no browser
+  - o tamanho dos pacotes também não precisa estar na minha IDE, eu posso verificar a versão compilada ou ver essa informação no NPM
 
-Essas foram algumas das extensões preferidas aqui dentro do isaac, genéricas o suficiente para serem úteis e recomendadas para "qualquer" desenvolvedor fullstack. 
+Mas quanto tempo você demoraria para achar todas essas informações ? Muitas extensões podem te poupar alguns segundos por operação, que facilmente se somam em horas por semana e até dias por mês.
 
-Comente abaixo as suas preferidas se ainda não foram mencionadas ou recomende esse artigo para algum amigo que possa economizar alguns minutos por dia usando essas ferramentas.
+Mas também é verdade que o excesso de _hints_ na tela pode ser confuso, pois realmente tem um peso cognitivo muito maior (imagine a mesma linha com um highlight diferente, sublinhada, dizendo o peso do import e a git history).
+
+Minha dica é, adicione uma ou duas extensões de tempos em tempos e avalie se ela realmente te trás benefícios ou não, tente customizá-las, talvez habilitando somente um subset de features e depois decida se você prefere mantê-las ou removê-las. Nem todas as tarefas PRECISAM ser feitas exclusivamente pela IDE. 
+
+E você ? Também usa o VSCode ? Quais são as suas extensões preferidas ? 
+
+Conhece alguém que poderia se beneficiar de alguns minutos extras por dia ? Recomende esse artigo 👍🏻
+
+## Sobre mim 
+
+Eu me chamo [Marcelo Tokarnia][:linkedin-marcelo] e sou Engenheiro de Software no [isaac][:linkedin-isaac]. Trabalho na área a cerca de 10 anos, metade dos quais, venho usando [VSCode][:vscode] como minha IDE de preferência para codar.
 
 <!-- REFERENCES -->
 [:linkedin-marcelo]: https://www.linkedin.com/in/marcelo-tokarnia-5a1ab2128/
 [:linkedin-isaac]: https://www.linkedin.com/company/olaisaac/
 <!-- IDEs -->
+[:stack-overflow-annual-survey]: https://insights.stackoverflow.com/survey/2019#development-environments-and-tools
 [:vscode]: https://code.visualstudio.com/
 [:goland]: https://www.jetbrains.com/go/
 [:pycharm]: https://www.jetbrains.com/pycharm/
