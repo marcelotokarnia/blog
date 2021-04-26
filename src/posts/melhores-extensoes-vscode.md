@@ -93,6 +93,21 @@ Você deveria evitar importar grandes pacotes levianamente. Essa extensão te al
 
 E também coloca um hint de tamanho aproximado de cada pacote no seu código, para despertar um pouco mais de cuidado e conscientização sobre o que está sendo empurrado para o cliente.
 
+- [Local History (wix.xyz.local-history)][:local-history]
+
+<div style="text-align: center">
+  <img src="https://res.cloudinary.com/marcelotokarnia/image/upload/v1619109263/blog/import-cost_gfdzwu.gif" />
+  <p>Salve todas alterações feitas nos seus arquivos</p>
+</div>
+
+Que nunca deletou sem querer aquele arquivo super importante, perdendo algumas horas de trabalho por clicar no lugar errado.
+
+O git até nos ajuda com isso, mas quando você ainda ainda não está traqueando o arquivo ou esqueceu de adicionar as últimas mudanças feitas. O local history vem pra te ajudar nesses casos de borda, ele guarda um histórico de todas as alterações feitas nos seus arquivos, mesmo que eles tenham estejam apagados ainda é possível ver seu histórico.
+
+
+A extensão não serve só como um fail safe, na prática, o que mais faço é dar aquela olhadinha pra ver como estava o meu código umas 3 horas atrás. Seja qual caso de uso, ela é uma excelente adição para suas ferramentas de trabalho
+
+
 ## Conclusão
 
 Algumas pessoas mais "puristas" podem argumentar que todas essas informações podem ser encontradas em outras fontes, por exemplo: 
