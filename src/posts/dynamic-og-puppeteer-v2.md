@@ -7,7 +7,7 @@ authorPic: https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,g_fac
 tags: Puppeteer,Strava,Redis,meta,OG
 ---
 
-If you haven't read [the previous post](/blog/dynamic-og-meta-tags-puppeteer), please check that before continuing.
+If you haven't read [the previous post](/coding-blog/dynamic-og-meta-tags-puppeteer), please check that before continuing.
 
 As mentioned on my previous post, I couldn't use a lightweighted Puppeteer due to some Heroku limitations, which were mitigated by using the full blown Puppeteer and installing a new buildpack.
 

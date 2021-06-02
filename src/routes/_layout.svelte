@@ -6,7 +6,7 @@
 
 <Nav {segment} />
 
-<main>
+<main class={segment}>
   <slot />
 </main>
 
@@ -17,5 +17,11 @@
     padding: 2em;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+
+  main.resume {
+    max-width: none !important;
+    padding: 2em !important;
+    margin: 0 auto !important;
   }
 </style>

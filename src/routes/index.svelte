@@ -1,7 +1,6 @@
 <script lang="typescript">
   import LinkedinBadge from '@components/LinkedinBadge.svelte'
   import Github from '@components/GithubButton.svelte'
-  import Tag from '@components/Tag.svelte'
   export let title: string = 'Marcelo Tokarnia'
   const profileSource: string =
     'https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,g_face:center,r_max,h_500,w_500,f_auto,q_auto/v1590609457/profile/A54I1782_qa84qz.jpg'
@@ -26,15 +25,7 @@
   <div>
     <p class="padded-content">👩🏻‍💻👨🏻‍💻 Coding 🖥💻</p>
     <LinkedinBadge className="padded-content" />
-    <Github text="My public Matrix" className="padded-content" />
-    <div class="padded-content split">
-      <a target="_blank" href="https://resume.tokks.tech" rel="noopener noreferrer">
-        <Tag name="📕 Skills & Experiences" size="large" />
-      </a>
-      <a href="/portfolio" rel="noopener noreferrer">
-        <Tag name="🔨 Spare time Projects" size="large" />
-      </a>
-    </div>
+    <Github text="My public Code" className="padded-content" />
   </div>
   <div>
     <p class="padded-content">🏃🏻‍♂️ Running 🏃🏻‍♀️</p>
@@ -43,7 +34,7 @@
       height="454"
       width="300"
       frameborder="0"
-      allowtransparency="true"
+      allowtransparency={true}
       scrolling="no"
       src="https://www.strava.com/athletes/12209995/latest-rides/fa8aa37314adf693c33151a66d57b464aa53d412"
     />
@@ -77,8 +68,7 @@
     display: flex;
   }
 
-  .split > div,
-  .split > a {
+  .split > div {
     flex: 1;
     text-align: center;
   }

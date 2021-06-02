@@ -13,7 +13,7 @@ posts.slice(0, 5).forEach(p =>
   feed.item({
     title: p.title,
     description: p.summary,
-    url: `https://marcelo.tokks.tech/blog/${p.slug}`,
+    url: `https://marcelo.tokks.tech/coding-blog/${p.slug}`,
     guid: p.slug,
     categories: p.tags,
     author: p.author,

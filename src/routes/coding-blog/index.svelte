@@ -1,7 +1,7 @@
 <script context="module">
   import { assocPath, pathOr, append } from 'ramda'
   export function preload({ params, query }) {
-    return this.fetch(`blog.json`)
+    return this.fetch(`coding-blog.json`)
       .then(r => r.json())
       .then(posts => {
         const postsGroup = posts.reduce((acc, post) => {
@@ -45,8 +45,8 @@
       <h2>{year} - {monthNames[month]}</h2>
       {#each postsGroup[year][month] as post}
         <li>
-          <a rel="prefetch" href="blog/{post.slug}">
-            <span>{post.title}</span>
+          <a rel="prefetch" href="coding-blog/{post.slug}">
+            <span class="title">{post.title}</span>
             <p class="summary">{post.summary}</p>
           </a>
         </li>
@@ -60,8 +60,17 @@
     margin: 0 0 1em 0;
     line-height: 1.5;
   }
+  li {
+    display: block;
+    padding-left: 2rem;
+  }
+  .title {
+    color: white;
+    font-size: 1.25rem;
+  }
   .summary {
     padding-left: 2rem;
+    font-size: 0.875rem;
   }
 
   a {

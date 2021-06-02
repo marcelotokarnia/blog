@@ -7,7 +7,7 @@ authorPic: https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,g_fac
 tags: CRA,React,Next,CustomDomain,SSR
 ---
 
-So this is a description of a series of steps that I took in the migration from CRA to Next in my application. If you are interested in the motivation to do so, [read the previous post](/blog/cra-to-next-p1)
+So this is a description of a series of steps that I took in the migration from CRA to Next in my application. If you are interested in the motivation to do so, [read the previous post](/coding-blog/cra-to-next-p1)
 
 This is no official way to migrate from one to the other, but a series of steps that worked for me in my FIRST Next project, and as you can see in the commits, I went back on a few decisions here and there, so I was really experimenting.
 

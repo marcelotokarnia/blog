@@ -25,4 +25,4 @@ So what if on top of that I add Next Api Routes and the frontend only communicat
 
 Well, that can be worked around 😜
 
-[Next](/blog/cra-to-next-p2) (pun intended)
+[Next](/coding-blog/cra-to-next-p2) (pun intended)

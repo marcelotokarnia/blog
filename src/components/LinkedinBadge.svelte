@@ -9,7 +9,6 @@
       <div class="LI-profile-badge-header LI-name-container LI-row">
         <div class="LI-col LI-header">
           <a href={profileUrl} target="_blank" rel="noopener noreferrer">
-            <div class="LI-name">Marcelo Tokarnia</div>
             <div class="LI-title">Senior Software Engineer</div>
           </a>
         </div>
@@ -95,14 +94,6 @@
         -moz-transform: rotate(360deg);
       }
     }
-    @-ms-keyframes archetype-loader {
-      from {
-        -ms-transform: rotate(0deg);
-      }
-      to {
-        -ms-transform: rotate(360deg);
-      }
-    }
     @-o-keyframes archetype-loader {
       from {
         -o-transform: rotate(0deg);
@@ -130,16 +121,6 @@
       }
     }
     @-moz-keyframes archetype-loader-position-medium-1 {
-      from,
-      to {
-        background-position: 0 -288px;
-        width: 58px;
-        height: 58px;
-        margin-left: -29px;
-        margin-top: -29px;
-      }
-    }
-    @-ms-keyframes archetype-loader-position-medium-1 {
       from,
       to {
         background-position: 0 -288px;
@@ -189,16 +170,6 @@
         margin-top: -29px;
       }
     }
-    @-ms-keyframes archetype-loader-position-medium-2 {
-      from,
-      to {
-        background-position: 0 -230px;
-        width: 58px;
-        height: 58px;
-        margin-left: -29px;
-        margin-top: -29px;
-      }
-    }
     @-o-keyframes archetype-loader-position-medium-2 {
       from,
       to {
@@ -230,16 +201,6 @@
       }
     }
     @-moz-keyframes archetype-loader-position-small-1 {
-      from,
-      to {
-        background-position: 0 -362px;
-        width: 16px;
-        height: 16px;
-        margin-left: -8px;
-        margin-top: -8px;
-      }
-    }
-    @-ms-keyframes archetype-loader-position-small-1 {
       from,
       to {
         background-position: 0 -362px;
@@ -289,16 +250,6 @@
         margin-top: -8px;
       }
     }
-    @-ms-keyframes archetype-loader-position-small-2 {
-      from,
-      to {
-        background-position: 0 -346px;
-        width: 16px;
-        height: 16px;
-        margin-left: -8px;
-        margin-top: -8px;
-      }
-    }
     @-o-keyframes archetype-loader-position-small-2 {
       from,
       to {
@@ -339,16 +290,6 @@
         margin-top: -57.5px;
       }
     }
-    @-ms-keyframes archetype-loader-position-large-1 {
-      from,
-      to {
-        background-position: 0 -115px;
-        width: 115px;
-        height: 115px;
-        margin-left: -57.5px;
-        margin-top: -57.5px;
-      }
-    }
     @-o-keyframes archetype-loader-position-large-1 {
       from,
       to {
@@ -380,16 +321,6 @@
       }
     }
     @-moz-keyframes archetype-loader-position-large-2 {
-      from,
-      to {
-        background-position: 0 0;
-        width: 115px;
-        height: 115px;
-        margin-left: -57.5px;
-        margin-top: -57.5px;
-      }
-    }
-    @-ms-keyframes archetype-loader-position-large-2 {
       from,
       to {
         background-position: 0 0;
@@ -569,13 +500,6 @@
     font-weight: normal;
     line-height: 16px;
     color: white;
-  }
-  .LI-badge-container.horizontal.light .LI-name {
-    display: block;
-    font-size: 18px;
-    line-height: 22px;
-    color: white;
-    font-weight: bold;
   }
   .LI-badge-container.horizontal.light .LI-name a {
     font-size: 18px;

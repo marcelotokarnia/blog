@@ -1,6 +1,6 @@
 <script context="module">
   export async function preload({ params, query }) {
-    const res = await this.fetch(`blog/${params.slug}.json`)
+    const res = await this.fetch(`coding-blog/${params.slug}.json`)
     const data = await res.json()
 
     if (res.status === 200) {
@@ -20,6 +20,36 @@
   export let post
   const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' })
 </script>
+
+<svelte:head>
+  <title>{post.title}</title>
+</svelte:head>
+
+<h1>{post.title}</h1>
+
+{#each post.tags as tag}
+  <Tag name={tag} />
+{/each}
+
+<div class="content">
+  {@html post.html}
+</div>
+
+<footer>
+  <div class="fl flex">
+    <KoFi />
+    <Github text="Edit this page" path="/blog/edit/master/src/posts/{post.slug}.md" />
+  </div>
+  <div class="fr flex">
+    <img class="author-pic" alt={post.author} src={post.authorPic} />
+    <span class="vertical-flex">
+      <span>{dateFormater.format(new Date(post.date))}</span>
+      <span>{post.author}</span>
+    </span>
+  </div>
+</footer>
+
+<DisqusComments id={post.slug} />
 
 <style>
   .author-pic {
@@ -57,33 +87,3 @@
     display: flex;
   }
 </style>
-
-<svelte:head>
-  <title>{post.title}</title>
-</svelte:head>
-
-<h1>{post.title}</h1>
-
-{#each post.tags as tag}
-  <Tag name={tag} />
-{/each}
-
-<div class="content">
-  {@html post.html}
-</div>
-
-<footer>
-  <div class="fl flex">
-    <KoFi />
-    <Github text="Edit this page" path="/blog/edit/master/src/posts/{post.slug}.md" />
-  </div>
-  <div class="fr flex">
-    <img class="author-pic" alt={post.author} src={post.authorPic} />
-    <span class="vertical-flex">
-      <span>{dateFormater.format(new Date(post.date))}</span>
-      <span>{post.author}</span>
-    </span>
-  </div>
-</footer>
-
-<DisqusComments id={post.slug} />

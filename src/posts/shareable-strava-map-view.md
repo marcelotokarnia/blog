@@ -91,4 +91,4 @@ export default async (_parent, args, context) => {
   req.redis = BuffedRedis
 ```
 
-Make sure to read the [next post](/blog/dynamic-og-meta-tags-puppeteer) about some nice dynamic og meta tags on a client rendered app with puppeteer screenshot and a few more tricks.
+Make sure to read the [next post](/coding-blog/dynamic-og-meta-tags-puppeteer) about some nice dynamic og meta tags on a client rendered app with puppeteer screenshot and a few more tricks.

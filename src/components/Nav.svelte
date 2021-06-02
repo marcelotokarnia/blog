@@ -1,6 +1,34 @@
 <script lang="typescript">
+  import NavItem from './NavItem.svelte'
   export let segment
 </script>
+
+<nav class="top-menu">
+  <ul>
+    <NavItem ariacurrent={segment === undefined ? 'page' : undefined} href="." label="🏡 Home" />
+    <NavItem
+      ariacurrent={segment === 'resume' ? 'page' : undefined}
+      href="resume"
+      label="📚 Resume"
+    />
+    <NavItem
+      ariacurrent={segment === 'portfolio' ? 'page' : undefined}
+      href="portfolio"
+      label="⚙️ Portfolio"
+    />
+    <NavItem
+      ariacurrent={segment === 'coding-blog' ? 'page' : undefined}
+      href="coding-blog"
+      label="👾 Coding Blog"
+    />
+    <NavItem ariacurrent={segment === undefined ? 'ts' : undefined} href="ts" label="TS Tips" />
+
+    <!-- Sapper build exclude routes that are not referenced 🤷🏻‍♀️ -->
+    <li class="hide">
+      <a href="feed.xml">Feed</a>
+    </li>
+  </ul>
+</nav>
 
 <style>
   nav {
@@ -21,55 +49,7 @@
     clear: both;
   }
 
-  li {
-    display: block;
-    float: left;
-  }
-
-  [aria-current] {
-    position: relative;
-    display: inline-block;
-  }
-
-  [aria-current]::after {
-    position: absolute;
-    content: '';
-    width: calc(100% - 2em);
-    height: 2px;
-    background-color: lightskyblue;
-    display: block;
-    bottom: -1px;
-  }
-
-  a {
-    text-decoration: none;
-    padding: 1em;
-    display: block;
-  }
-
   .hide {
     display: none;
   }
 </style>
-
-<nav class="top-menu">
-  <ul>
-    <li>
-      <a aria-current={segment === undefined ? 'page' : undefined} href=".">🏡Home</a>
-    </li>
-
-    <li>
-      <a rel="prefetch" aria-current={segment === 'blog' ? 'page' : undefined} href="blog">
-        Coding Blog
-      </a>
-    </li>
-
-    <li>
-      <a rel="prefetch" aria-current={segment === 'ts' ? 'page' : undefined} href="ts">TS Tips</a>
-    </li>
-
-    <li>
-      <a href="feed.xml" class="hide">Feed</a>
-    </li>
-  </ul>
-</nav>
