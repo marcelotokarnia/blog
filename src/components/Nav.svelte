@@ -21,7 +21,7 @@
       href="coding-blog"
       label="👾 Coding Blog"
     />
-    <NavItem ariacurrent={segment === undefined ? 'ts' : undefined} href="ts" label="TS Tips" />
+    <NavItem ariacurrent={segment === 'ts' ? 'page' : undefined} href="ts" label="TS Tips" />
 
     <!-- Sapper build exclude routes that are not referenced 🤷🏻‍♀️ -->
     <li class="hide">
