@@ -1,6 +1,6 @@
 <script lang="typescript">
   import 'tachyons/css/tachyons.min.css'
-  import Nav from '@components/Nav.svelte'
+  import Nav from '../components/Nav.svelte'
   export let segment
 </script>
 

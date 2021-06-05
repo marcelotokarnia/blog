@@ -12,8 +12,6 @@
     "paths": {
       "@posts": ["src/posts/index.ts"],
       "@tstips": ["src/tstips/index.ts"],
-      "@components/*": ["src/components/*"],
-      "*": ["node_modules/*"]
     }
   }
 }

@@ -27,6 +27,14 @@
     <li class="hide">
       <a href="feed.xml">Feed</a>
     </li>
+
+    <li class="hide">
+    <NavItem
+      ariacurrent={segment === 'travel-tips' ? 'page' : undefined}
+      href="travel-tips"
+      label="🗺 Travel Tips"
+    />
+    </li>
   </ul>
 </nav>
 
@@ -49,7 +57,7 @@
     clear: both;
   }
 
-  .hide {
+  :global(.hide) {
     display: none;
   }
 </style>

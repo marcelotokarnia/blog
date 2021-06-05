@@ -2,6 +2,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
 import commonjs from '@rollup/plugin-commonjs'
 import svelte from 'rollup-plugin-svelte'
+import html from 'rollup-plugin-html'
 import markdown from './rollup/markdown'
 import glob from 'rollup-plugin-glob'
 import { terser } from 'rollup-plugin-terser'
@@ -18,7 +19,6 @@ const srcFolder = `${__dirname}/src`
 const aliases = alias({
   resolve: ['.js', '.svelte', '.ts'],
   entries: [
-    { find: '@components', replacement: `${srcFolder}/components` },
     { find: '@posts', replacement: `${srcFolder}/posts` },
     { find: '@tstips', replacement: `${srcFolder}/tstips` },
   ],
@@ -43,7 +43,11 @@ export default {
         'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode),
       }),
+      html({
+        include: '**/*.html',
+      }),
       svelte({
+        exclude: '**/*.html',
         preprocess: autoPreprocess(),
         dev,
         hydratable: true,
@@ -76,7 +80,11 @@ export default {
         'process.browser': false,
         'process.env.NODE_ENV': JSON.stringify(mode),
       }),
+      html({
+        include: '**/*.html',
+      }),
       svelte({
+        exclude: '**/*.html',
         preprocess: autoPreprocess(),
         generate: 'ssr',
         dev,

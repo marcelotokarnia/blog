@@ -13,10 +13,10 @@
 
 <script>
   import 'highlight.js/styles/vs.css'
-  import Tag from '@components/Tag.svelte'
-  import Github from '@components/GithubButton.svelte'
-  import KoFi from '@components/KoFi.svelte'
-  import DisqusComments from '@components/DisqusComments.svelte'
+  import Tag from '../../components/Tag.svelte'
+  import Github from '../../components/GithubButton.svelte'
+  import KoFi from '../../components/KoFi.svelte'
+  import DisqusComments from '../../components/DisqusComments.svelte'
   export let post
   const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' })
 </script>
