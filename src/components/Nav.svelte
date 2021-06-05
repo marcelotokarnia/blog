@@ -29,11 +29,18 @@
     </li>
 
     <li class="hide">
-    <NavItem
-      ariacurrent={segment === 'travel-tips' ? 'page' : undefined}
-      href="travel-tips"
-      label="🗺 Travel Tips"
-    />
+      <NavItem
+        ariacurrent={segment === 'travel-tips' ? 'page' : undefined}
+        href="travel-tips"
+        label="🗺 Travel Tips"
+      />
+    </li>
+    <li class="hide">
+      <NavItem
+        ariacurrent={segment === 'travel-tips' ? 'page' : undefined}
+        href="travel-tips/floripa"
+        label="🗺 Travel Tips"
+      />
     </li>
   </ul>
 </nav>
