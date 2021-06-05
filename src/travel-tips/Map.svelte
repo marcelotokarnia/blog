@@ -1,6 +1,13 @@
+<script context="module">
+  export const mapKey = {}
+</script>
+
 <script>
-  import { onMount } from 'svelte'
-  import floripa from './Floripa.html'
+  import { setContext, onMount } from 'svelte'
+
+  setContext(mapKey, {
+    getMap: () => map,
+  })
 
   let container
   let map
@@ -11,21 +18,14 @@
       center: { lat: -18.043764, lng: -47.404244 },
       mapTypeId: google.maps.MapTypeId.HYBRID,
     })
-    const infowindow = new google.maps.InfoWindow({
-      content: floripa,
-    })
-    const marker = new google.maps.Marker({
-      position: { lat: -27.602499, lng: -48.49048 },
-      map,
-      title: 'Floripa',
-    })
-    marker.addListener('click', () => {
-      infowindow.open(map, marker)
-    })
   })
 </script>
 
-<div class="map-size" bind:this={container} />
+<div class="map-size" bind:this={container}>
+  {#if map}
+    <slot />
+  {/if}
+</div>
 
 <style>
   .map-size {
