@@ -1,16 +1,21 @@
 <script>
-  import Map from '../../travel-tips/Map.svelte'
-  import Marker from '../../travel-tips/Marker.svelte'
-  import InfoWindow from '../../travel-tips/InfoWindow.svelte'
-  import Floripa from '../../travel-tips/Floripa.svelte'
+  import Map from '../../components/map/Map.svelte'
+  import Marker from '../../components/map/Marker.svelte'
+  import InfoWindow from '../../components/map/InfoWindow.svelte'
+  import BasicInfoWindow from '../../components/map/BasicInfoWindow.svelte'
+  import { spec as floripaSpec } from './floripa/index.svelte'
+
+  const specs = [floripaSpec]
   let mapReady
   $: mapReady = window.mapReady
 </script>
 
 {#if mapReady}
   <Map>
-    <Marker lat={-27.602499} lng={-48.49048} title={'Floripa'}>
-      <InfoWindow component={Floripa} props={{ a: 42 }} />
-    </Marker>
+    {#each specs as spc}
+      <Marker lat={spc.position.lat} lng={spc.position.lng} title={spc.name}>
+        <InfoWindow component={BasicInfoWindow} props={{ title: spc.name }} />
+      </Marker>
+    {/each}
   </Map>
 {/if}

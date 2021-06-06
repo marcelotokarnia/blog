@@ -1,7 +1,8 @@
 <script context="module">
-  export async function preload({ params, query }) {
-    const city = { floripa: { name: 'Florianópolis' } }[params.citySlug]
-    return { city }
+  export const spec = {
+    name: 'Florianópolis',
+    polygon: null,
+    position: { lat: -27.602499, lng: -48.49048 },
   }
 </script>
 

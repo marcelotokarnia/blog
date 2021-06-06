@@ -1,5 +1,6 @@
 <script lang="typescript">
   import NavItem from './NavItem.svelte'
+  import SiteMap from './SiteMap.svelte'
   export let segment
 </script>
 
@@ -24,24 +25,15 @@
     <NavItem ariacurrent={segment === 'ts' ? 'page' : undefined} href="ts" label="TS Tips" />
 
     <!-- Sapper build exclude routes that are not referenced 🤷🏻‍♀️ -->
-    <li class="hide">
-      <a href="feed.xml">Feed</a>
-    </li>
+    <SiteMap />
 
-    <li class="hide">
+    <!-- <li class="hide">
       <NavItem
         ariacurrent={segment === 'travel-tips' ? 'page' : undefined}
         href="travel-tips"
         label="🗺 Travel Tips"
       />
-    </li>
-    <li class="hide">
-      <NavItem
-        ariacurrent={segment === 'travel-tips' ? 'page' : undefined}
-        href="travel-tips/floripa"
-        label="🗺 Travel Tips"
-      />
-    </li>
+    </li> -->
   </ul>
 </nav>
 
