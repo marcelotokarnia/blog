@@ -6,15 +6,8 @@
   }
 </script>
 
-<script>
-  export let city
-</script>
-
-{#if city}
-  <div>
-    {city.name}
-  </div>
-  <pre>    
+<div>Florianópolis</div>
+<pre>    
 Lagoinha do Leste
 Morro da Coroa
 Dedo de Deus
@@ -57,4 +50,3 @@ Cachoeira do Jarrão
 Pedra Branca
 Cachoeira do Salto do Rio Vermelho
   </pre>
-{/if}
