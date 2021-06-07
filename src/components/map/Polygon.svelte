@@ -3,6 +3,7 @@
   import { mapKey } from './Map.svelte'
   import { markerKey } from './Marker.svelte'
   import { v4 as uuid } from 'uuid'
+  import { decodePath } from '../../utils/map'
 
   export let paths
   export let autoRemove
@@ -13,8 +14,10 @@
   const { getMarker } = getContext(markerKey)
   const marker = getMarker()
 
+  console.log(decodePath(paths))
+
   const polygon = new google.maps.Polygon({
-    paths,
+    paths: decodePath(paths),
     strokeColor: '#FF0000',
     strokeOpacity: 0.8,
     strokeWeight: 2,

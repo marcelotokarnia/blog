@@ -1,10 +1,9 @@
 <script context="module">
-  import polygon from '../../../travel-tips/floripa/polygon'
   export const spec = {
     name: 'Florianópolis',
-    polygon: null,
     position: { lat: -27.602499, lng: -48.49048 },
-    polygon,
+    polygon:
+      'tuogDlukgHz{@ewBfzA}i@lcAfsDxmD|i@loC?blE?vgCvXb`CvX``C?vaBeP~_CwXnrAabDmxBabDgiBytAet@}pCmxBor@qxBucAo~CvXefDytAqrAwX_}DqGooCsnByaBytA?quEuxBewBcwCnr@mfDz{D{dEglAurAm}Aul@quE}aGm}AyuDvXm}DflAscAfsDabBldEgNx{DnzAhhClzAtjD`bBhhCn`CjdE`hCjhClzAglAjzA?vrAucApiB?~gCha@bkA{i@hzA`{@x{@xtAbkAtcAzgCia@',
     href: '/travel-tips/floripa',
   }
 </script>
@@ -19,7 +18,7 @@ Ponta da Felicidade
 
 Jurerê -> Morro do Farol -> Praia da Daniela
 
-Ponta de Canas -> Ponta da Lage -> Lagoinha do Norte
+Ponta das Canas -> Ponta da Lage -> Lagoinha do Norte
 Lagoinha do Norte -> Morro do Rapa -> Praia Brava
 
 Praia Brava -> Morro da Feiticeira -> Ingleses
