@@ -1,8 +1,15 @@
 <script>
   export let title
+  export let href
 </script>
 
-<div>{title}</div>
+<div>
+  {#if href}
+    <a {href}>{title}</a>
+  {:else}
+    {title}
+  {/if}
+</div>
 
 <style>
   div {

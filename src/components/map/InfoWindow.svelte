@@ -1,7 +1,3 @@
-<script context="module">
-  export const infowindowkey = {}
-</script>
-
 <script>
   import { getContext, onDestroy } from 'svelte'
   import { mapKey } from './Map.svelte'
@@ -24,6 +20,11 @@
 
   let infoWindowComponent
 
+  const closeListener = infoWindow.addListener('closeclick', () => {
+    const toRemove = Object.values(marker.toRemoveKeys)
+    toRemove.forEach(e => e.setMap(null))
+  })
+
   const eventListener = marker.addListener('click', () => {
     infoWindow.open(map, marker)
 
@@ -39,5 +40,6 @@
   onDestroy(() => {
     infoWindow.close()
     google.maps.event.removeListener(eventListener)
+    google.maps.event.removeListener(closeListener)
   })
 </script>

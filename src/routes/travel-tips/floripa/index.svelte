@@ -1,8 +1,11 @@
 <script context="module">
+  import polygon from '../../../travel-tips/floripa/polygon'
   export const spec = {
     name: 'Florianópolis',
     polygon: null,
     position: { lat: -27.602499, lng: -48.49048 },
+    polygon,
+    href: '/travel-tips/floripa',
   }
 </script>
 

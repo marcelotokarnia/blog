@@ -18,6 +18,7 @@
       center: { lat: -18.043764, lng: -47.404244 },
       mapTypeId: google.maps.MapTypeId.HYBRID,
     })
+    // map.addListener('click', e => console.log({ lat: e.latLng.lat(), lng: e.latLng.lng() }))
   })
 </script>
 
