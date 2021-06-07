@@ -10,8 +10,8 @@
 </script>
 
 <div>Florianópolis</div>
+<a href="/travel-tips/floripa/lagoinha-do-leste">Lagoinha do Leste</a>
 <pre>    
-Lagoinha do Leste
 Morro da Coroa
 Dedo de Deus
 Morro do Pântano

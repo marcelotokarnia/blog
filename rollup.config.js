@@ -57,6 +57,7 @@ export default {
         browser: true,
         dedupe: ['svelte'],
       }),
+      commonjs(),
       typescript(),
       babel({ babelHelpers: 'bundled' }),
       !dev &&
@@ -92,6 +93,7 @@ export default {
       resolve({
         dedupe: ['svelte'],
       }),
+      commonjs(),
       typescript(),
       babel({ babelHelpers: 'bundled' }),
     ],

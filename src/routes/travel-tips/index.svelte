@@ -7,17 +7,13 @@
   import { spec as floripaSpec } from './floripa/index.svelte'
 
   const specs = [floripaSpec]
-  let mapReady
-  $: mapReady = window.mapReady
 </script>
 
-{#if mapReady}
-  <Map>
-    {#each specs as spc}
-      <Marker lat={spc.position.lat} lng={spc.position.lng} title={spc.name}>
-        <Polygon paths={spc.polygon} autoRemove={true} />
-        <InfoWindow component={BasicInfoWindow} props={{ title: spc.name, href: spc.href }} />
-      </Marker>
-    {/each}
-  </Map>
-{/if}
+<Map>
+  {#each specs as spc}
+    <Marker lat={spc.position.lat} lng={spc.position.lng} title={spc.name}>
+      <Polygon paths={spc.polygon} autoRemove={true} />
+      <InfoWindow component={BasicInfoWindow} props={{ title: spc.name, href: spc.href }} />
+    </Marker>
+  {/each}
+</Map>
