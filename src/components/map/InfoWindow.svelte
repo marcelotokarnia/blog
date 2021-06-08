@@ -7,7 +7,9 @@
   export let component
   export let props
 
-  const randomClass = `uuid-${uuid().split('-')[0]}`
+  const id = uuid()
+
+  const randomClass = `uuid-${id.split('-')[0]}`
 
   const { getMap } = getContext(mapKey)
   const map = getMap()
@@ -21,12 +23,16 @@
   let infoWindowComponent
 
   const closeListener = infoWindow.addListener('closeclick', () => {
+    map.deregisterCloseOnClick(id)
     const toRemove = Object.values(marker.toRemoveKeys)
     toRemove.forEach(e => e.setMap(null))
+    marker.toRemoveKeys = {}
   })
 
   const eventListener = marker.addListener('click', () => {
+    map.closeAll()
     infoWindow.open(map, marker)
+    map.registerCloseOnClick(id, infoWindow)
 
     setTimeout(() => {
       infoWindowComponent = new component({

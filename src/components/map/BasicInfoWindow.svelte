@@ -1,6 +1,6 @@
 <script>
   export let title
-  export let href
+  export let href = ''
 </script>
 
 <div>

@@ -10,9 +10,11 @@
     <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <script>
-      window.initMap = function ready() {
-        window.mapReady = true
-      }
+      if(window){
+        window.initMap = function ready() {
+          window.mapReady = true
+        }
+      } 
     </script>
     <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_kmVi1Y-PEiJruIj2pGorJ7GPvy3j05Y&callback=initMap" ></script>
     

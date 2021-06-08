@@ -27,11 +27,8 @@
 
   if (marker) {
     const eventListener = marker.addListener('click', () => {
-      if (!marker.toRemoveKeys) {
-        marker.toRemoveKeys = {}
-      }
       if (autoRemove) {
-        marker.toRemoveKeys[id] = polygon
+        marker.registerRemoveKey(id, polygon)
       }
       polygon.setMap(map)
     })

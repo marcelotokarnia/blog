@@ -7,6 +7,9 @@
   const map = getMap()
 
   export let path
+  export let isActive
+
+  $: polyline.setOptions({ strokeColor: isActive ? '#0000FF' : '#FF0000' })
 
   const polyline = new google.maps.Polyline({
     path: decodePath(path),

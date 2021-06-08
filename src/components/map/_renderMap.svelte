@@ -1,4 +1,6 @@
 <script>
+  import { identical } from 'ramda'
+
   import { setContext, onMount } from 'svelte'
   import { mapKey } from './Map.svelte'
 
@@ -18,7 +20,18 @@
       center,
       mapTypeId: google.maps.MapTypeId.HYBRID,
     })
-    // map.addListener('click', e => console.log({ lat: e.latLng.lat(), lng: e.latLng.lng() }))
+    map.toCloseOnClick = {}
+    map.registerCloseOnClick = (id, infoWindow) => (map.toCloseOnClick[id] = infoWindow)
+    map.deregisterCloseOnClick = id => {
+      delete map.toCloseOnClick[id]
+    }
+    map.closeAll = () => {
+      const toClose = Object.values(map.toCloseOnClick)
+      toClose.forEach(e => e.close())
+      map.toCloseOnClick = {}
+    }
+    map.addListener('click', e => console.log({ lat: e.latLng.lat(), lng: e.latLng.lng() }))
+    map.addListener('click', map.closeAll)
   })
 </script>
 
