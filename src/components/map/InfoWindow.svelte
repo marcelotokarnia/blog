@@ -1,7 +1,8 @@
 <script>
   import { getContext, onDestroy } from 'svelte'
-  import { mapKey, targetKey } from './Map.svelte'
+  import { mapKey, targetKey, TARGET_TYPES } from './Map.svelte'
   import { v4 as uuid } from 'uuid'
+  import { POLYLINE_COLORS } from './Polyline.svelte'
 
   export let component
   export let props
@@ -12,8 +13,9 @@
 
   const { getMap } = getContext(mapKey)
   const map = getMap()
-  const { getTarget } = getContext(targetKey)
+  const { getTarget, getTargetType } = getContext(targetKey)
   const target = getTarget()
+  const targetType = getTargetType()
 
   const infoWindow = new google.maps.InfoWindow({
     content: `<info-window class="${randomClass}"></info-window>`,
@@ -26,12 +28,20 @@
     const toRemove = Object.values(target.toRemoveKeys)
     toRemove.forEach(e => e.setMap(null))
     target.toRemoveKeys = {}
+    if (targetType === TARGET_TYPES.POLYLINE) {
+      target.setOptions({ strokeColor: POLYLINE_COLORS.DEFAULT })
+    }
   })
 
   const eventListener = target.addListener('click', e => {
     map.closeAll()
-    infoWindow.setPosition(e.latLng)
-    infoWindow.open(map)
+    if (targetType === TARGET_TYPES.POLYLINE) {
+      infoWindow.setPosition(e.latLng)
+      infoWindow.open(map)
+      target.setOptions({ strokeColor: POLYLINE_COLORS.ACTIVE })
+    } else if (targetType === TARGET_TYPES.MARKER) {
+      infoWindow.open(map, target)
+    }
     map.registerCloseOnClick(id, infoWindow)
 
     setTimeout(() => {

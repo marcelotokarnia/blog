@@ -11,10 +11,6 @@
 <div>Florianópolis</div>
 <a href="/travel-tips/floripa/lagoinha-do-leste">Lagoinha do Leste</a>
 <pre>    
-Morro da Coroa
-Dedo de Deus
-Morro do Pântano
-Ponta da Felicidade
 
 Jurerê -> Morro do Farol -> Praia da Daniela
 
@@ -23,9 +19,9 @@ Lagoinha do Norte -> Morro do Rapa -> Praia Brava
 
 Praia Brava -> Morro da Feiticeira -> Ingleses
 Ingleses -> Toca da Onça -> Santinho
-Santinho -> Morro das Aranha -> Moçambique
+Santinho -> Morro das Aranha -> Pedra do Marimbondo -> Moçambique
 
-Barra da Lagoa -> Alto da Boa Vista -> Piscinas Naturais -> Galheta
+Barra da Lagoa -> Piscinas Naturais -> Alto da Boa Vista -> Galheta
 Praia do Gravatá
 Praia Secret
 

@@ -25,10 +25,15 @@
     }
     map.closeAll = () => {
       const toClose = Object.values(map.toCloseOnClick)
-      toClose.forEach(e => e.close())
+      toClose.forEach(e => {
+        e.close()
+        google.maps.event.trigger(e, 'closeclick')
+      })
       map.toCloseOnClick = {}
     }
-    map.addListener('click', e => console.log({ lat: e.latLng.lat(), lng: e.latLng.lng() }))
+    map.addListener('click', e =>
+      console.log(JSON.stringify({ position: { lat: e.latLng.lat(), lng: e.latLng.lng() } }))
+    )
     map.addListener('click', map.closeAll)
   })
 </script>

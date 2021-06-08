@@ -1,30 +1,108 @@
 <script>
   import BasicInfoWindow from '../../../components/map/BasicInfoWindow.svelte'
   import InfoWindow from '../../../components/map/InfoWindow.svelte'
-  import Marker from '../../../components/map/Marker.svelte'
+  import Marker, { MARKER_TYPES } from '../../../components/map/Marker.svelte'
   import Map from '../../../components/map/Map.svelte'
   import Polyline from '../../../components/map/Polyline.svelte'
 
   const center = { lat: -27.774435, lng: -48.497667 }
   const waypoints = [
     {
-      name: 'Dedo de Deus',
-      position: { lat: -27.785384, lng: -48.495629 },
+      name: 'Córrego',
+      position: { lat: -27.779626, lng: -48.50108 },
+      type: MARKER_TYPES.WATER,
     },
     {
-      name: 'Ponto para acampar e puta vista',
+      name: 'Córrego',
+      position: { lat: -27.779089, lng: -48.499022 },
+      type: MARKER_TYPES.WATER,
+    },
+    {
+      name: 'Córrego',
+      position: { lat: -27.78547, lng: -48.495519 },
+      type: MARKER_TYPES.WATER,
+    },
+    {
+      name: 'Córrego',
+      position: { lat: -27.785741, lng: -48.486174 },
+      type: MARKER_TYPES.WATER,
+    },
+    {
+      name: 'Córrego',
+      position: { lat: -27.761211, lng: -48.48634 },
+      type: MARKER_TYPES.WATER,
+    },
+    {
+      name: 'Córrego',
+      position: { lat: -27.770183, lng: -48.491894 },
+      type: MARKER_TYPES.WATER,
+    },
+    {
+      name: 'Ponta da Lagoinha',
+      position: { lat: -27.769471417782178, lng: -48.47679772020212 },
+      type: MARKER_TYPES.VIEWPOINT,
+    },
+    {
+      name: 'Casa de pescador',
+      position: { lat: -27.788787, lng: -48.487833 },
+      type: MARKER_TYPES.INFO,
+    },
+    {
+      name: 'Dedo de Deus',
+      position: { lat: -27.785384, lng: -48.495629 },
+      type: MARKER_TYPES.VIEWPOINT,
+    },
+    {
+      name: 'Morro do Matadeiro (288m)',
       position: { lat: -27.765752853645928, lng: -48.49836709035904 },
+      type: MARKER_TYPES.SUMMIT,
+    },
+    {
+      name: 'Morro do Pântano (350m)',
+      position: { lat: -27.783556156829707, lng: -48.49420126273249 },
+      type: MARKER_TYPES.SUMMIT,
+    },
+    {
+      name: 'Camping',
+      position: { lat: -27.765832666215967, lng: -48.49823296891769 },
+      type: MARKER_TYPES.CAMPING,
     },
     {
       name: 'Possivelmente desce para a praia do Matadeiro',
       position: { lat: -27.765656736040658, lng: -48.500286085515604 },
+      type: MARKER_TYPES.INFO,
     },
     {
       name: 'Possivelmente desce para o bairro',
       position: { lat: -27.773106006045847, lng: -48.500499412719726 },
+      type: MARKER_TYPES.INFO,
+    },
+    {
+      name: 'Ponta da Felicidade',
+      position: { lat: -27.784506963803047, lng: -48.484395495215416 },
+      type: MARKER_TYPES.CAMPING,
+    },
+    {
+      name: 'Morro da Coroa',
+      position: { lat: -27.78192443423382, lng: -48.4884441490105 },
+      type: MARKER_TYPES.CAMPING,
+    },
+    {
+      name: 'Quiosques',
+      position: { lat: -27.7705151141703, lng: -48.48457569566014 },
+      type: MARKER_TYPES.SHOP,
+    },
+    {
+      name: 'Quiosques',
+      position: { lat: -27.7776782879758, lng: -48.488837739290005 },
+      type: MARKER_TYPES.SHOP,
     },
   ]
   const paths = [
+    {
+      path: 'lynhDvu|fH@?A?MCC?SLGFGVCZCVFVGXILC?KLCF@NCFANOT?HFf@JVPRJNFZB\\B^AJEXSTKTCV?\\HTJXEMOQM?UJKLEN@R@@BTEXA\\FT@V?ZCZFVHN@V@R?R?^ARFVAPDLHXLP@LDTBHBN@FBRDTBNFHAVFPPLDD@VCT?TJZJJLJBDD?DEJKPCLANBHDT?NHLFJFDJFHHLNLLJ?J@LAN?B@?E@?D??AABBJNJRFR@H@FHJ?B@HBL?BLRALFHLLPCRHLLNFNPJJPDBALGPBV@LDJHJFLBNBFHFFD@AA@F@NJDPBJDHHLBLBN?J?LAP?PDP?N?HFJFJHJLJFHJLBD?LBP@LFP@PJTBV?JHRRXBTJPHPLTJVNVHNFRBRJLPHNP?B@NFPDTFHJHHNPHJ@@HJFPHPRPHDLHJJNLNJPHTNRHRJPLLHLTDJ@BD@?E@A?D',
+      name: 'Contorno da Lagoa',
+    },
     {
       path: 'hophDrc_gHKb@K@C@A?QCI?EB?????A??AC????UICIKC?????@C??@?????@A???ODEDQLQ\\_@JIDUNG?GDE@EBCBE@G?S??ACC]?IFYPA@IFEA??AA??M@?F@BC@I?[VW`@a@JG?e@BKAU^a@Ta@Na@Ia@@c@?_@O]EIPKVA@MCC?AAEAGCYEE?OCA?A?CAAEMH[PMJID_@PAFKFMZ]PWR?XALEb@@RL`@BD@@BA@C?????@???@E@A??????@BDCACBFBCK???????E??AA??AA?AAEAAAIAA?CC???AAAG?EAA?AHg@Ke@I@C?AAC?A?AE??AAAGU_@IWSOa@?_@Gc@CACYHe@FEE?Ac@EYCYGE?E?a@AQB???@A@?@A@??AA?A?AE?A???M?a@Ia@MUA?A@??AUECACC?A?CA??A?AACICAACGQE?A???@A??@??@?@AA??@??????A?@A?@A??A???E???@?????@???@A?C@A?EAAAAA?????A??A?C???C?IBGBACA@A?a@IQCECC?EIIBYIGE_@OOAA??A???@A??@AJA@?F??DAA@CDA@C@AF?@@BGBGh@AHA@E?G?KJMAG?KBGBI@A??@IA???????AAC?AAAAA????C?E@AAA?EEBK?ECI?EAGA?EAE?CAIEGEQA??SDECE?G@IFYLa@PMC[XUB?@A???A???A@??A@?D?B?JA@DD@??A???????????@???A??@???A?C?A?A??A??C??A??EI??AAGAEAOCOEACCA??MO_@WGKAAWYOPW[]OWKDA?????@?A??CBA?GI?@??A?FF??A?????????????????A@EAA?A???????????A??@?????A?????????????A??@?A???@????????@?@????????@A??H@BC@?DC???AACAAAABE?CAKBYAA?????@?@?@??A?@AABMACAAAA???A?AAA???????????BAD?@??BB@DB@B?@?D?B???@?@BNCHBNA?NHDHXPRH?J@@BB@F@D?@AD?B?@@B@@A@?D??EVAA@ABA?AGGJNABCDAB?@AB?@@@CP?@???B?B??ABCFCJ?@Af@IL?D??A@?@@J?FA@?@?@@B?B??AF??@@AD[PCBC@CBA@SNC@E?EE',
       name: 'Morro do Matadeiro',

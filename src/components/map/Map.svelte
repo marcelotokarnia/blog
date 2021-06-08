@@ -1,6 +1,10 @@
-<script context="module">
+<script context="module" lang="typescript">
   export const mapKey = {}
   export const targetKey = {}
+  export enum TARGET_TYPES {
+    MARKER = 'MARKER',
+    POLYLINE = 'POLYLINE',
+  }
 </script>
 
 <script>
