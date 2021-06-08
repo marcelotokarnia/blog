@@ -7,10 +7,10 @@
   }
 </script>
 
-<script>
+<script lang="typescript">
   import Map from './_renderMap.svelte'
   let mapReady
-  $: mapReady = window.mapReady
+  $: mapReady = process.browser ? window?.mapReady : null
 
   export let zoom
   export let center
