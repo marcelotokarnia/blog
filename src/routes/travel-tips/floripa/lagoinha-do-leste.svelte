@@ -1,4 +1,5 @@
 <script>
+  import Meta from '../../../components/Meta.svelte'
   import BasicInfoWindow from '../../../components/map/BasicInfoWindow.svelte'
   import InfoWindow from '../../../components/map/InfoWindow.svelte'
   import Marker, { MARKER_TYPES } from '../../../components/map/Marker.svelte'
@@ -141,6 +142,14 @@
     },
   ]
 </script>
+
+<svelte:head>
+  <Meta
+    title="Lagoinha do Leste"
+    description="Lugarzão"
+    image="https://res.cloudinary.com/marcelotokarnia/image/upload/r_max,h_627,w_1200,f_auto,q_auto/v1603404538/decabecanomato/d25llawimn8yftnribil.jpg"
+  />
+</svelte:head>
 
 <div class="flex">
   <div class="flex6">
