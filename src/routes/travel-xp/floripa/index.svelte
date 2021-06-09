@@ -4,12 +4,18 @@
     position: { lat: -27.602499, lng: -48.49048 },
     polygon:
       'tuogDlukgHz{@ewBfzA}i@lcAfsDxmD|i@loC?blE?vgCvXb`CvX``C?vaBeP~_CwXnrAabDmxBabDgiBytAet@}pCmxBor@qxBucAo~CvXefDytAqrAwX_}DqGooCsnByaBytA?quEuxBewBcwCnr@mfDz{D{dEglAurAm}Aul@quE}aGm}AyuDvXm}DflAscAfsDabBldEgNx{DnzAhhClzAtjD`bBhhCn`CjdE`hCjhClzAglAjzA?vrAucApiB?~gCha@bkA{i@hzA`{@x{@xtAbkAtcAzgCia@',
-    href: '/travel-tips/floripa',
+    href: '/travel-xp/floripa',
   }
 </script>
 
+<script>
+  import Meta from '../../../components/Meta.svelte'
+</script>
+
+<Meta title="Florianópolis" description="Lugarzão" />
+
 <div>Florianópolis</div>
-<a href="/travel-tips/floripa/lagoinha-do-leste">Lagoinha do Leste</a>
+<a href="/travel-xp/floripa/lagoinha-do-leste">Lagoinha do Leste</a>
 <pre>    
 
 Jurerê -> Morro do Farol -> Praia da Daniela

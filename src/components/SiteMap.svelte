@@ -1,5 +1,5 @@
 <script>
-  const hiddenUrls = ['/travel-tips', '/travel-tips/floripa', '/feed.xml']
+  const hiddenUrls = ['/travel-xp', '/travel-xp/floripa', '/feed.xml']
 </script>
 
 {#each hiddenUrls as href}

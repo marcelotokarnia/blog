@@ -16,6 +16,7 @@
 </script>
 
 <script>
+  import Meta from '../../components/Meta.svelte'
   const monthNames = [
     'January',
     'February',
@@ -33,9 +34,7 @@
   export let postsGroup
 </script>
 
-<svelte:head>
-  <title>Blog posts</title>
-</svelte:head>
+<Meta title="Coding Blog" />
 
 <h1>Most recent blog posts</h1>
 

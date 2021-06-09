@@ -13,6 +13,7 @@
 
 <script>
   import 'highlight.js/styles/vs.css'
+  import Meta from '../../components/Meta.svelte'
   import Tag from '../../components/Tag.svelte'
   import Github from '../../components/GithubButton.svelte'
   import KoFi from '../../components/KoFi.svelte'
@@ -21,9 +22,7 @@
   const dateFormater = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' })
 </script>
 
-<svelte:head>
-  <title>{post.title}</title>
-</svelte:head>
+<Meta title={post.title} description={post.summary} />
 
 <h1>{post.title}</h1>
 

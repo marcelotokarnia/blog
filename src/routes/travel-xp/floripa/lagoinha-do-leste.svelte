@@ -143,14 +143,11 @@
   ]
 </script>
 
-<svelte:head>
-  <title>Lagoinha do Leste</title>
-  <Meta
-    title="Lagoinha do Leste"
-    description="Lugarzão"
-    image="https://res.cloudinary.com/marcelotokarnia/image/upload/r_max,h_627,w_1200,f_auto,q_auto/v1603404538/decabecanomato/d25llawimn8yftnribil.jpg"
-  />
-</svelte:head>
+<Meta
+  title="Lagoinha do Leste"
+  description="Lugarzão"
+  image="https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,h_627,w_1200,f_auto,q_auto/v1603404538/decabecanomato/d25llawimn8yftnribil.jpg"
+/>
 
 <div class="flex">
   <div class="flex6">

@@ -1,5 +1,6 @@
 <script>
   import Map from '../../components/map/Map.svelte'
+  import Meta from '../../components/Meta.svelte'
   import Marker from '../../components/map/Marker.svelte'
   import Polygon from '../../components/map/Polygon.svelte'
   import InfoWindow from '../../components/map/InfoWindow.svelte'
@@ -9,6 +10,7 @@
   const specs = [floripaSpec]
 </script>
 
+<Meta title="Experiências de viagem" description="Altos picos" />
 <Map>
   {#each specs as spc}
     <Marker lat={spc.position.lat} lng={spc.position.lng} title={spc.name}>
