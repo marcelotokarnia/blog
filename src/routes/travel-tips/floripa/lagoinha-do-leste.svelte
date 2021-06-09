@@ -144,6 +144,7 @@
 </script>
 
 <svelte:head>
+  <title>Lagoinha do Leste</title>
   <Meta
     title="Lagoinha do Leste"
     description="Lugarzão"

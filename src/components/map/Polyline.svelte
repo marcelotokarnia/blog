@@ -1,7 +1,7 @@
-<script context="module" lang="typescript">
-  export enum POLYLINE_COLORS {
-    ACTIVE = '#0000FF',
-    DEFAULT = '#FF0000',
+<script context="module">
+  export const POLYLINE_COLORS = {
+    ACTIVE: '#0000FF',
+    DEFAULT: '#FF0000',
   }
 </script>
 

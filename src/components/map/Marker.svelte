@@ -1,13 +1,13 @@
-<script context="module" lang="typescript">
-  export enum MARKER_TYPES {
-    SHOP = 'SHOP',
-    SUMMIT = 'SUMMIT',
-    VIEWPOINT = 'VIEWPOINT',
-    CAMPING = 'CAMPING',
-    WATER = 'WATER',
-    INFO = 'INFO',
-    CAVE = 'CAVE',
-    WATERFALL = 'WATERFALL',
+<script context="module">
+  export const MARKER_TYPES = {
+    SHOP: 'SHOP',
+    SUMMIT: 'SUMMIT',
+    VIEWPOINT: 'VIEWPOINT',
+    CAMPING: 'CAMPING',
+    WATER: 'WATER',
+    INFO: 'INFO',
+    CAVE: 'CAVE',
+    WATERFALL: 'WATERFALL',
   }
 </script>
 

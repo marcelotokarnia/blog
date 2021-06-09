@@ -1,16 +1,16 @@
-<script context="module" lang="typescript">
+<script context="module">
   export const mapKey = {}
   export const targetKey = {}
-  export enum TARGET_TYPES {
-    MARKER = 'MARKER',
-    POLYLINE = 'POLYLINE',
+  export const TARGET_TYPES = {
+    MARKER: 'MARKER',
+    POLYLINE: 'POLYLINE',
   }
 </script>
 
-<script lang="typescript">
+<script>
   import Map from './_renderMap.svelte'
   let mapReady
-  $: mapReady = process.browser ? window?.mapReady : null
+  $: mapReady = process.browser ? window.mapReady : null
 
   export let zoom
   export let center
