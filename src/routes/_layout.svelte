@@ -5,6 +5,12 @@
   export let segment
 </script>
 
+<Nav {segment} />
+
+<main class={segment}>
+  <slot />
+</main>
+
 <svelte:head>
   <meta charset="UTF-8" />
   <meta
@@ -18,12 +24,6 @@
 
   <Meta />
 </svelte:head>
-
-<Nav {segment} />
-
-<main class={segment}>
-  <slot />
-</main>
 
 <style>
   main {
