@@ -2,7 +2,7 @@
   import { getContext, onDestroy } from 'svelte'
   import { mapKey, targetKey } from './Map.svelte'
   import { v4 as uuid } from 'uuid'
-  import { decodePath } from '../../utils/map'
+  import { poly2array } from '../../utils/map'
 
   export let paths
   export let autoRemove
@@ -14,7 +14,7 @@
   const target = getTarget()
 
   const polygon = new google.maps.Polygon({
-    paths: decodePath(paths),
+    paths: poly2array(paths),
     strokeColor: '#FF0000',
     strokeOpacity: 0.8,
     strokeWeight: 2,

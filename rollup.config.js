@@ -4,6 +4,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import svelte from 'rollup-plugin-svelte'
 import html from 'rollup-plugin-html'
 import markdown from './rollup/markdown'
+import xml from 'rollup-plugin-xml'
 import glob from 'rollup-plugin-glob'
 import { terser } from 'rollup-plugin-terser'
 import config from 'sapper/config/rollup'
@@ -76,6 +77,9 @@ export default {
       aliases,
       image(),
       markdown(),
+      xml({
+        format: 'compact',
+      }),
       glob(),
       replace({
         'process.browser': false,

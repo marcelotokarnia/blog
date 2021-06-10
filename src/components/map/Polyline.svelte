@@ -8,7 +8,7 @@
 <script>
   import { getContext, onDestroy, setContext } from 'svelte'
   import { mapKey, targetKey, TARGET_TYPES } from './Map.svelte'
-  import { decodePath } from '../../utils/map'
+  import { poly2array } from '../../utils/map'
 
   const { getMap } = getContext(mapKey)
 
@@ -22,7 +22,7 @@
   })
 
   const polyline = new google.maps.Polyline({
-    path: decodePath(path),
+    path: poly2array(path),
     geodesic: true,
     map,
     strokeColor: POLYLINE_COLORS.DEFAULT,

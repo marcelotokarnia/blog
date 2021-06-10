@@ -2,7 +2,6 @@
   import LinkedinBadge from '../components/LinkedinBadge.svelte'
   import Github from '../components/GithubButton.svelte'
   import Meta from '../components/Meta.svelte'
-  export let title: string = 'Marcelo Tokarnia'
   const profileSource: string =
     'https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,g_face:center,r_max,h_500,w_500,f_auto,q_auto/v1590609457/profile/A54I1782_qa84qz.jpg'
 </script>
