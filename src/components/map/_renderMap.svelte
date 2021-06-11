@@ -43,10 +43,3 @@
     <slot />
   {/if}
 </div>
-
-<style>
-  .map-size {
-    width: 100%;
-    height: 70vh;
-  }
-</style>

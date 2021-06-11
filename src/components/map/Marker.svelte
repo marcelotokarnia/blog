@@ -1,13 +1,25 @@
 <script context="module">
+  import {
+    ShopIcon,
+    shopIconUrl,
+    SummitIcon,
+    summitIconUrl,
+    ViewpointIcon,
+    viewpointIconUrl,
+    campingIconUrl,
+    CampingIcon,
+    waterIconUrl,
+    WaterIcon,
+    infoIconUrl,
+    InfoIcon,
+  } from './icons'
   export const MARKER_TYPES = {
-    SHOP: 'SHOP',
-    SUMMIT: 'SUMMIT',
-    VIEWPOINT: 'VIEWPOINT',
-    CAMPING: 'CAMPING',
-    WATER: 'WATER',
-    INFO: 'INFO',
-    CAVE: 'CAVE',
-    WATERFALL: 'WATERFALL',
+    SHOP: { name: 'SHOP', image: shopIconUrl, icon: ShopIcon },
+    SUMMIT: { name: 'SUMMIT', image: summitIconUrl, icon: SummitIcon },
+    VIEWPOINT: { name: 'VIEWPOINT', image: viewpointIconUrl, icon: ViewpointIcon },
+    CAMPING: { name: 'CAMPING', image: campingIconUrl, icon: CampingIcon },
+    WATER: { name: 'WATER', image: waterIconUrl, icon: WaterIcon },
+    INFO: { name: 'INFO', image: infoIconUrl, icon: InfoIcon },
   }
 </script>
 
@@ -22,6 +34,7 @@
   export let lng
   export let title
   export let bounceMs
+  export let type = ''
 
   $: if (bounceMs) {
     marker.setAnimation(google.maps.Animation.BOUNCE)
@@ -34,6 +47,7 @@
     position: { lat, lng },
     map,
     title,
+    icon: MARKER_TYPES[type].image,
   })
 
   marker.toRemoveKeys = {}
