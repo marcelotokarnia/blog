@@ -6,8 +6,11 @@
   import InfoWindow from '../../components/map/InfoWindow.svelte'
   import BasicInfoWindow from '../../components/map/BasicInfoWindow.svelte'
   import { spec as floripaSpec } from './floripa/index.svelte'
+  import { spec as itatiaiaSpec } from './itatiaia/index.svelte'
+  import { spec as serraFinaSpec } from './serra-fina/index.svelte'
+  import { spec as chapadaVeadeirosSpec } from './chapada-dos-veadeiros/index.svelte'
 
-  const specs = [floripaSpec]
+  const specs = [floripaSpec, itatiaiaSpec, serraFinaSpec, chapadaVeadeirosSpec]
 </script>
 
 <Meta title="Experiências de viagem" description="Altos picos" />

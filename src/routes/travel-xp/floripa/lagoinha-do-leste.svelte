@@ -47,15 +47,15 @@
   <div class="flex4">
     <Map zoom={14} {center}>
       {#each paths as { path, isActive, name }}
-        <Polyline {path} {isActive}
-          ><InfoWindow component={BasicInfoWindow} props={{ title: name }} /></Polyline
-        >
+        <Polyline {path} {isActive}>
+          <InfoWindow component={BasicInfoWindow} props={{ title: name }} />
+        </Polyline>
       {/each}
       {#each waypoints as { name, position, type, bounceMs }}
         {#if waypointsFilter[type]}
-          <Marker {...position} title={name} {type} {bounceMs}
-            ><InfoWindow component={BasicInfoWindow} props={{ title: name }} /></Marker
-          >
+          <Marker {...position} title={name} {type} {bounceMs}>
+            <InfoWindow component={BasicInfoWindow} props={{ title: name }} />
+          </Marker>
         {/if}
       {/each}
     </Map>

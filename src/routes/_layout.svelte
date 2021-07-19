@@ -20,6 +20,7 @@
   <meta name="author" content="Marcelo Tokarnia" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
 </svelte:head>
 
 <style>

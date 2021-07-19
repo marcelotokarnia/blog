@@ -47,7 +47,7 @@
     position: { lat, lng },
     map,
     title,
-    icon: MARKER_TYPES[type].image,
+    icon: type ? MARKER_TYPES[type].image : null,
   })
 
   marker.toRemoveKeys = {}
