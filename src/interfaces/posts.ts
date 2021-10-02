@@ -1,4 +1,5 @@
 export type Post = {
+  hidden?: boolean
   title: string
   summary: string
   author: string

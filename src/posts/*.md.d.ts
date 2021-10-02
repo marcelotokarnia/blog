@@ -6,6 +6,7 @@ type PreparsedPost = {
     author: string
     authorPic: string
     tags: string
+    hidden?: boolean
   }
   filename: string
   html: string
