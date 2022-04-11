@@ -27,5 +27,5 @@ export default {
     'Redux',
   ],
   repo: 'https://github.com/marcelotokarnia/django-news/',
-  link: 'http://news.tokks.tech',
+  link: 'http://news.tokarnia.tech',
 }

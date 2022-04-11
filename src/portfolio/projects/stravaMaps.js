@@ -24,5 +24,5 @@ export default {
     'Supertest',
   ],
   repo: 'https://github.com/marcelotokarnia/strava-maps',
-  link: 'https://strava.tokks.tech/',
+  link: 'https://strava.tokarnia.tech/',
 }

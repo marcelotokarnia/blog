@@ -63,4 +63,4 @@ Now all the tests are back to green 💚✅
 
 And the application is happily running at my own custom domain, with Heroku addons, with ssr headers and for free!
 
-[See it for yourself](https://strava.tokks.tech)
+[See it for yourself](https://strava.tokarnia.tech)

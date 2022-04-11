@@ -13,5 +13,5 @@ export default {
   images: bubbles,
   tags: ['Javascript', 'ES6Modules', 'Canvas'],
   repo: 'https://github.com/marcelotokarnia/bubblesGame',
-  link: 'https://bubbles.tokks.tech/',
+  link: 'https://bubbles.tokarnia.tech/',
 }

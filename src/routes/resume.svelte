@@ -1,4 +1,4 @@
-<iframe class="expand" title="Resume" src="https://resume.tokks.tech" />
+<iframe class="expand" title="Resume" src="https://resume.tokarnia.tech" />
 
 <style>
   .expand {

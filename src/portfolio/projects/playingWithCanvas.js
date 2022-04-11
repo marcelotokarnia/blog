@@ -13,5 +13,5 @@ export default {
   images: playingWithCanvas,
   tags: ['React', 'Canvas', 'Redux', 'Stylus'],
   repo: 'https://github.com/marcelotokarnia/playing-with-canvas',
-  link: 'https://canvas.tokks.tech/',
+  link: 'https://canvas.tokarnia.tech/',
 }

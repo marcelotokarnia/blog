@@ -11,5 +11,5 @@ export default {
   images,
   tags: ['Gatsby', 'Sanity', 'React', 'CSS Grid'],
   repo: 'https://github.com/marcelotokarnia/slickSlices',
-  link: 'https://slices.tokks.tech',
+  link: 'https://slices.tokarnia.tech',
 }

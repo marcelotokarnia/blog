@@ -44,7 +44,7 @@ Until I decided to try and revive this project. So I learned why you should use 
 
 Well, that would work, if only it was not the root volume, I spent the whole night trying to do that, and I seriously don't recommend it. A few hours later I just started all over from a small volume in a new instance and it took me like 20 minutes to set it all up 😂 Talk about a waste of time.
 
-But this time I used [Let's Encrypt][lets-encrypt] to place a 3 months certificate in the server so that I could use the custom domain I already had `tokks.tech`. And it worked 🟢
+But this time I used [Let's Encrypt][lets-encrypt] to place a 3 months certificate in the server so that I could use the custom domain I already had `tokarnia.tech`. And it worked 🟢
 
 🛑 For 3 more months until I had to renew it. Then I was just ashamed to be paying for AWS for 3 months (even if it was just $5/mon). And decided to give in for the automated stuff, I was proud to have done everything as manually as it could be, I learned a lot. But I also learned when to let others do stuff that is not worth for you 😂
 

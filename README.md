@@ -22,7 +22,7 @@ Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
 
 ## See this app live
 
-[Blog@Vercel](https://marcelo.tokks.tech)
+[Blog@Vercel](https://marcelo.tokarnia.tech)
 
 ## Down ahead you will find Sapper specific documentation ... 
 

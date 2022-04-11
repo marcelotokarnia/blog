@@ -11,5 +11,5 @@ export default {
   images: viewport,
   tags: ['React', 'D3', 'Data', 'Redux', 'Typescript'],
   repo: 'https://github.com/marcelotokarnia/viewport',
-  link: 'https://viewport.tokks.tech/',
+  link: 'https://viewport.tokarnia.tech/',
 }

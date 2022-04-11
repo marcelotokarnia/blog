@@ -11,5 +11,5 @@ export default {
   images: apartments,
   tags: ['Javascript', 'Typescript', 'Infinite Scrool', 'Suspense', 'Jest', 'Redux'],
   repo: 'https://github.com/marcelotokarnia/apartments',
-  link: 'https://apartments.tokks.tech/',
+  link: 'https://apartments.tokarnia.tech/',
 }

@@ -19,5 +19,5 @@ export default {
     'Rollup',
   ],
   repo: 'https://github.com/marcelotokarnia/blog',
-  link: 'https://marcelo.tokks.tech/',
+  link: 'https://marcelo.tokarnia.tech/',
 }
