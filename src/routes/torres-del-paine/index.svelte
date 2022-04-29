@@ -40,6 +40,13 @@
 
 <div><h1 class="tc">Torres del Paine - Circuito O</h1></div>
 
+<div class="mb6">
+  <img
+    alt="acrobacias no mirador los cuernos em torres del paine"
+    src="https://res.cloudinary.com/marcelotokarnia/image/upload/c_thumb,h_627,w_1200,f_auto,q_auto/v1651191749/blog/travel-xp/torres-del-paine/mirante_los_cuernos_mzg4qb.jpg"
+  />
+</div>
+
 <div class="flex mb4">
   <div class="flex4">
     <Map {zoom} {center}>
@@ -126,6 +133,13 @@
   <li>Passagens de ônibus de ida e volta do parque (R$ 36,00 / trecho / pessoa)</li>
   <li>Passagens de ônibus de ida e volta do aeroporto (R$ 25,00 / trecho / pessoa)</li>
 </ul>
+<p>
+  A cidade de referência é Puerto Natales. Tem poucos vôos para lá. Mas nós conseguimos ir (Vôo LA1
+  da Latam saindo quinta feira de manhã de Santiago) e voltar por lá (Vôo JA 340 da JetSmart saindo
+  domingo a noite para Santiago). Além de facilitar a logística foi mais barato. Vale ver se
+  conseguimos vôo pra lá também. Mas outra opção que o pessoal costuma fazer é ir pra Punta Arenas e
+  pegar um bus.
+</p>
 <p>
   Arredonda tudo pra cima e coloca uma margem pra gastar com comida e souvenirs, da pra fazer essa
   viagem com uns ~R$4000,00 por pessoa.
