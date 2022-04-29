@@ -156,7 +156,9 @@
   <li>pilha</li>
   <li>
     barraca (só o camping Paine Grande que pega bastante vento, se pularmos esse camping não precisa
-    ser nenhuma barraca muito high tech)
+    ser nenhuma barraca muito high tech... eu pulei o Paine Grande no dia 5 e mesmo somando 2
+    trechos deu 20km de caminhada, predominantemente plana. É tranquilo, mas o dia anterior é o mais
+    duro, então há a chance de ter gente cansada 😅)
   </li>
   <li>headlamp</li>
   <li>gopro</li>
