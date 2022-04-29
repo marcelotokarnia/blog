@@ -119,15 +119,18 @@
 
 <ul>
   <li><a href="https://www.skyscanner.com.br/">Passagens (~R$3000,00 / pessoa)</a></li>
-  <li><a href="https://aspticket.cl/">Ingressos do Parque (US$49,00 / pessoa)</a></li>
+  <li>
+    <a href="https://aspticket.cl/">Ingressos do Parque (US$49,00 / pessoa / mês)</a> heheeh não vende
+    um ingresso menor que o mês 🤷🏻‍♀️ da bastante tempo pra terminar o rolê heheh
+  </li>
   <li>
     <a href="https://reservas.verticepatagonia.cl/index.xhtml"
-      >Campings Vértice (Dickson, Los Perros, Grey) (US$9,00 / pessoa)</a
+      >Campings Vértice (Dickson, Los Perros, Grey) (US$9,00 / pessoa / dia)</a
     >
   </li>
   <li>
     <a href="https://lastorres.com/"
-      >Campings Fantástico Sur (Serón, Francés, Chileno) (US$22,00 / barraca de duas pessoas)</a
+      >Campings Fantástico Sur (Serón, Francés, Chileno) (US$22,00 / barraca de duas pessoas / dia)</a
     >
   </li>
   <li>Passagens de ônibus de ida e volta do parque (R$ 36,00 / trecho / pessoa)</li>
