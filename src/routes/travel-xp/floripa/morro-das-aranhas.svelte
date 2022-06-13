@@ -2,21 +2,26 @@
   import Map from '../../../components/map/Map.svelte'
   import Meta from '../../../components/Meta.svelte'
   import Marker from '../../../components/map/Marker.svelte'
+  import InfoWindow from '../../../components/map/InfoWindow.svelte'
+  import BasicInfoWindow from '../../../components/map/BasicInfoWindow.svelte'
 
   const title = '⭐️⭐️⭐️ Morro das Aranhas'
-  const spc = {"position":{"lat":-27.472734275332712,"lng":-48.37983384209141}, name: title }
+  const spc = { position: { lat: -27.472734275332712, lng: -48.37983384209141 }, name: title }
 </script>
 
 <h2>{title}</h2>
 
 <Meta {title} description={title} />
 <Map zoom={12} center={spc.position}>
-  <Marker lat={spc.position.lat} lng={spc.position.lng} title={spc.name} />
+  <Marker lat={spc.position.lat} lng={spc.position.lng} title={spc.name}>
+    <InfoWindow component={BasicInfoWindow} props={{ title: spc.name }} />
+  </Marker>
 </Map>
 
 <p>
-  <a href="https://www.strava.com/activities/6226129566">A atividade do Strava</a
-  > da a volta no Morro, desce na praia de Moçambique e sobe pela pedra do Marimbondo. Ainda tem a "Lagoa das Lavadeiras" ali por perto, mas eu não conheço ainda.
+  <a href="https://www.strava.com/activities/6226129566">A atividade do Strava</a> da a volta no Morro,
+  desce na praia de Moçambique e sobe pela pedra do Marimbondo. Ainda tem a "Lagoa das Lavadeiras" ali
+  por perto, mas eu não conheço ainda.
 </p>
 <p>Distância: 6km</p>
 <p>Elevação: 350m</p>
