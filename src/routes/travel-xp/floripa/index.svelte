@@ -15,42 +15,56 @@
 <Meta title="Florianópolis" description="Lugarzão" />
 
 <div>Florianópolis</div>
-<a href="/travel-xp/floripa/lagoinha-do-leste">Lagoinha do Leste</a>
-<pre>    
 
-Jurerê -> Morro do Farol -> Praia da Daniela
 
-Ponta das Canas -> Ponta da Lage -> Lagoinha do Norte
-Lagoinha do Norte -> Morro do Rapa -> Praia Brava
+<div><a href="/travel-xp/floripa/lagoinha-do-leste"> ⭐️⭐️⭐️⭐️⭐️ Lagoinha do Leste </a></div>
 
-Praia Brava -> Morro da Feiticeira -> Ingleses
-Ingleses -> Toca da Onça -> Santinho
-Santinho -> Morro das Aranha -> Pedra do Marimbondo -> Moçambique
+<div><a href="/travel-xp/floripa/cachoeira-rio-vermelho"> ⭐️⭐️⭐️⭐️⭐️ Cachoeira do Salto do Rio Vermelho </a></div>
 
-Barra da Lagoa -> Piscinas Naturais -> Alto da Boa Vista -> Galheta
-Praia do Gravatá
-Praia Secret
+<div><a href="/travel-xp/floripa/cambirela"> ⭐️⭐️⭐️⭐️⭐️ Cambirela </a></div>
 
-Cachoeira da Costa da Lagoa
-Morro do Assopro -> Pedra do Urubu
+<div><a href="/travel-xp/floripa/pedra-branca"> ⭐️⭐️⭐️⭐️ Pedra Branca </a></div>
 
-Morro do Lampião
-Trilha da Gurita -> Cachoeiras do Sertão
+<div><a href="/travel-xp/floripa/alto-da-boa-vista">
+  ⭐️⭐️⭐️⭐️ Barra da Lagoa -> Piscinas Naturais -> Alto da Boa Vista -> Galheta
+</a></div>
 
-Caverna do Pântano
+<div><a href="/travel-xp/floripa/morro-do-assopro"> ⭐️⭐️⭐️⭐️ Morro do Assopro -> Pedra do Urubu </a></div>
 
-Cachoeira da Solidão
-Solidão -> Naufragados -> Caieira
+<div><a href="/travel-xp/floripa/morro-das-aranhas">
+  ⭐️⭐️⭐️ Santinho -> Morro das Aranha -> Pedra do Marimbondo -> Moçambique
+</a></div>
 
-Ilha do Campeche
-Ilha do Francês
+<div><a href="/travel-xp/floripa/toca-da-onca--"> ⭐️⭐️⭐️ Ingleses -> Toca da Onça -> Santinho </a></div>
+<div><a href="/travel-xp/floripa/morro-do-lampiao--"> ⭐️⭐️⭐️ Morro do Lampião </a></div>
+<div><a href="/travel-xp/floripa/gurita-sertao--"> ⭐️⭐️⭐️ Trilha da Gurita -> Cachoeiras do Sertão </a></div>
+<div><a href="/travel-xp/floripa/caverna-pantano--"> ⭐️⭐️⭐️ Caverna do Pântano </a></div>
+<div><a href="/travel-xp/floripa/naufragados--"> ⭐️⭐️⭐️ Solidão -> Naufragados -> Caieira </a></div>
+<div><a href="/travel-xp/floripa/morro-da-cruz--"> ⭐️⭐️⭐️ Morro da Cruz </a></div>
+<div><a href="/travel-xp/floripa/cachoeira-jarrao--"> ⭐️⭐️⭐️ Cachoeira do Jarrão </a></div>
 
-Cachoeira do Poção
-Ponta do Coral
-Morro da Cruz
+<div><a href="/travel-xp/floripa/morro-do-farol">
+  ⭐️⭐️ Jurerê -> Morro do Farol -> Praia da Daniela
+</a></div>
 
-Cambirela
-Cachoeira do Jarrão
-Pedra Branca
-Cachoeira do Salto do Rio Vermelho
-  </pre>
+<div><a href="/travel-xp/floripa/morro-do-rapa--">
+  ⭐️⭐️ Lagoinha do Norte -> Morro do Rapa -> Praia Brava
+</a></div>
+
+<div><a href="/travel-xp/floripa/morro-da-feiticeira--">
+  ⭐️⭐️ Praia Brava -> Morro da Feiticeira -> Ingleses
+</a></div>
+
+<div><a href="/travel-xp/floripa/gravata-secret--"> ⭐️⭐️ Praia do Gravatá -> Secret </a></div>
+
+<div><a href="/travel-xp/floripa/cachoeira-costa-lagoa--"> ⭐️⭐️ Cachoeira da Costa da Lagoa </a></div>
+
+<div><a href="/travel-xp/floripa/cachoeira-solidao--"> ⭐️⭐️ Cachoeira da Solidão </a></div>
+<div><a href="/travel-xp/floripa/ilha-campeche--"> ⭐️⭐️ Ilha do Campeche </a></div>
+<div><a href="/travel-xp/floripa/ilha-frances--"> ⭐️⭐️ Ilha do Francês </a></div>
+<div><a href="/travel-xp/floripa/cachoeira-pocao--"> ⭐️⭐️ Cachoeira do Poção </a></div>
+<div><a href="/travel-xp/floripa/ponta-coral--"> ⭐️⭐️ Ponta do Coral </a></div>
+
+<div><a href="/travel-xp/floripa/ponta-da-lage">
+  ⭐️ Ponta das Canas -> Ponta da Lage -> Lagoinha do Norte
+</a></div>
