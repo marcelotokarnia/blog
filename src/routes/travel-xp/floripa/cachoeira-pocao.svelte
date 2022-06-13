@@ -6,7 +6,7 @@
   import BasicInfoWindow from '../../../components/map/BasicInfoWindow.svelte'
 
   const title = '⭐️⭐️ Cachoeira do Poção'
-  const spc = { position: { lat: -27.584633401280968, lng: -48.42461224132191 }, name: title }
+  const spc = { position: { lat: -27.615284643244593, lng: -48.50480521879317 }, name: title }
 </script>
 
 <h2>{title}</h2>
@@ -20,11 +20,15 @@
 
 <p>
   Cachoeirinha bem good vibes, NO MEIO DA CIDADE, super fácil acesso. Bom pra fazer um passeiozinho
-  leve num dia com pouco tempo ou clima mais instável. <a href="https://strava.comblablabla"
+  leve num dia com pouco tempo ou clima mais instável. <a
+    href="https://pt.wikiloc.com/trilhas-trekking/cachoeira-do-pocao-75679326"
     >A atividade no Wikiloc</a
   >
 </p>
-<p>Distância: km</p>
-<p>Elevação: m</p>
+<p>Distância: 2km</p>
+<p>Elevação: 60m</p>
 
-<img src="https://res.cloudinary.com/marcelotokarnia/image/fetch/" alt="" />
+<img
+  src="https://res.cloudinary.com/marcelotokarnia/image/fetch/https://imgs-akamai.mnstatic.com/78/b1/78b117bd3c21063df7cf2880313d51f8.jpg"
+  alt=""
+/>

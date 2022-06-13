@@ -6,7 +6,7 @@
   import BasicInfoWindow from '../../../components/map/BasicInfoWindow.svelte'
 
   const title = '⭐️⭐️ Ilha do Campeche'
-  const spc = { position: { lat: -27.584633401280968, lng: -48.42461224132191 }, name: title }
+  const spc = { position: { lat: -27.69632633042641, lng: -48.46591292531046 }, name: title }
 </script>
 
 <h2>{title}</h2>
@@ -30,4 +30,7 @@
 <p>Distância: 5km</p>
 <p>Elevação: 0m</p>
 
-<img src="https://res.cloudinary.com/marcelotokarnia/image/fetch/" alt="" />
+<img
+  src="https://res.cloudinary.com/marcelotokarnia/image/fetch/https://www.guiaviagensbrasil.com/blog/wp-content/uploads/2017/11/piscinas-naturais-da-ilha-do-campeche-SC.jpg"
+  alt=""
+/>

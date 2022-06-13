@@ -6,7 +6,7 @@
   import BasicInfoWindow from '../../../components/map/BasicInfoWindow.svelte'
 
   const title = '⭐️⭐️ Cachoeira da Costa da Lagoa'
-  const spc = { position: { lat: -27.584633401280968, lng: -48.42461224132191 }, name: title }
+  const spc = { position: { lat: -27.543693514758985, lng: -48.4639842581842 }, name: title }
 </script>
 
 <h2>{title}</h2>
@@ -19,11 +19,14 @@
 </Map>
 
 <p>
-  <a href="https://www.strava.com/activities/5465343048">Atividade do Strava</a>. Ali na Costa tem
+  <a href="https://www.strava.com/activities/4338971873">Atividade do Strava</a>. Ali na Costa tem
   muitos restaurantes bonitinhos e a maioria tem "convênio" com os barcos, daí você faz a trilha,
   almoça ali e volta de barco "de graça" pras Rendeiras.
 </p>
-<p>Distância: km</p>
-<p>Elevação: m</p>
+<p>Distância: 16km (ida e volta)</p>
+<p>Elevação: 450m</p>
 
-<img src="https://res.cloudinary.com/marcelotokarnia/image/fetch/" alt="" />
+<img
+  src="https://res.cloudinary.com/marcelotokarnia/image/fetch/https://destinoflorianopolis.com.br/wp-content/uploads/2016/09/Cachoeira-da-Costa-da-Lagoa.jpg"
+  alt=""
+/>

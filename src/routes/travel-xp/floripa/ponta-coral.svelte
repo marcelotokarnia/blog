@@ -6,7 +6,7 @@
   import BasicInfoWindow from '../../../components/map/BasicInfoWindow.svelte'
 
   const title = '⭐️⭐️ Ponta do Coral'
-  const spc = { position: { lat: -27.584633401280968, lng: -48.42461224132191 }, name: title }
+  const spc = { position: { lat: -27.569949576576175, lng: -48.537073038250654 }, name: title }
 </script>
 
 <h2>{title}</h2>
@@ -23,4 +23,7 @@
   bonito pra relaxar e ver o pôr do sol.
 </p>
 
-<img src="https://res.cloudinary.com/marcelotokarnia/image/fetch/" alt="" />
+<img
+  src="https://res.cloudinary.com/marcelotokarnia/image/fetch/https://files.nsctotal.com.br/s3fs-public/graphql-upload-files/ponta-do-coral-florianopolis-sc_0.jpg?E2M25dtHpPtuoH_CQQqpiXVqrV9vjRRv"
+  alt=""
+/>

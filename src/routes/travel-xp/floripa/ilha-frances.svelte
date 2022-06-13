@@ -6,7 +6,7 @@
   import BasicInfoWindow from '../../../components/map/BasicInfoWindow.svelte'
 
   const title = '⭐️⭐️ Ilha do Francês'
-  const spc = { position: { lat: -27.584633401280968, lng: -48.42461224132191 }, name: title }
+  const spc = { position: { lat: -27.417162162729593, lng: -48.47652271902144 }, name: title }
 </script>
 
 <h2>{title}</h2>
@@ -22,7 +22,11 @@
   Não é exatamente uma trilha né? Honestamente, eu não achei nada demais hehehe. Vale a pena alugar
   um kayak ou stand up e ir remando, é mais legal heheeh.
 </p>
+<p>Vai muito barco pra lá fazer festa, churrasco, música alta, achei desagradável.</p>
 <p>Distância: 3km</p>
 <p>Elevação: 0m</p>
 
-<img src="https://res.cloudinary.com/marcelotokarnia/image/fetch/" alt="" />
+<img
+  src="https://res.cloudinary.com/marcelotokarnia/image/fetch/https://i.pinimg.com/originals/ee/98/d8/ee98d86fc5ee20e2682f73c6a0ba3dc6.jpg"
+  alt=""
+/>

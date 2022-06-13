@@ -61,7 +61,7 @@
 </div>
 <div><a href="/travel-xp/floripa/morro-da-cruz"> ⭐️⭐️⭐️ Morro da Cruz </a></div>
 <div><a href="/travel-xp/floripa/cachoeira-jarrao"> ⭐️⭐️⭐️ Cachoeira do Jarrão </a></div>
-<div><a href="/travel-xp/floripa/gravata-secret--"> ⭐️⭐️⭐️ Praia do Gravatá -> Secret </a></div>
+<div><a href="/travel-xp/floripa/gravata-secret"> ⭐️⭐️⭐️ Praia do Gravatá -> Secret </a></div>
 
 <div>
   <a href="/travel-xp/floripa/morro-do-farol">
@@ -82,14 +82,14 @@
 </div>
 
 <div>
-  <a href="/travel-xp/floripa/cachoeira-costa-lagoa--"> ⭐️⭐️ Cachoeira da Costa da Lagoa </a>
+  <a href="/travel-xp/floripa/cachoeira-costa-lagoa"> ⭐️⭐️ Cachoeira da Costa da Lagoa </a>
 </div>
 
-<div><a href="/travel-xp/floripa/cachoeira-solidao--"> ⭐️⭐️ Cachoeira da Solidão </a></div>
-<div><a href="/travel-xp/floripa/ilha-campeche--"> ⭐️⭐️ Ilha do Campeche </a></div>
-<div><a href="/travel-xp/floripa/ilha-frances--"> ⭐️⭐️ Ilha do Francês </a></div>
-<div><a href="/travel-xp/floripa/cachoeira-pocao--"> ⭐️⭐️ Cachoeira do Poção </a></div>
-<div><a href="/travel-xp/floripa/ponta-coral--"> ⭐️⭐️ Ponta do Coral </a></div>
+<div><a href="/travel-xp/floripa/cachoeira-solidao"> ⭐️⭐️ Cachoeira da Solidão </a></div>
+<div><a href="/travel-xp/floripa/ilha-campeche"> ⭐️⭐️ Ilha do Campeche </a></div>
+<div><a href="/travel-xp/floripa/ilha-frances"> ⭐️⭐️ Ilha do Francês </a></div>
+<div><a href="/travel-xp/floripa/cachoeira-pocao"> ⭐️⭐️ Cachoeira do Poção </a></div>
+<div><a href="/travel-xp/floripa/ponta-coral"> ⭐️⭐️ Ponta do Coral </a></div>
 
 <div>
   <a href="/travel-xp/floripa/ponta-da-lage">

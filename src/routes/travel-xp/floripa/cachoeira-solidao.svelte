@@ -6,7 +6,7 @@
   import BasicInfoWindow from '../../../components/map/BasicInfoWindow.svelte'
 
   const title = '⭐️⭐️ Cachoeira da Solidão'
-  const spc = { position: { lat: -27.584633401280968, lng: -48.42461224132191 }, name: title }
+  const spc = { position: { lat: -27.794418762681993, lng: -48.53767640414582 }, name: title }
 </script>
 
 <h2>{title}</h2>
@@ -19,10 +19,14 @@
 </Map>
 
 <p>
-  <a href="https://www.strava.com/activities/5465343048">Atividade do Strava</a>. Bem facinho de
-  chegar. A trilha é curta e cheia de indicações.
+  <a href="https://pt.wikiloc.com/trilhas-trekking/trilha-da-cachoeira-da-solidao-32709349"
+    >Atividade do Wikiloc</a
+  >. Bem facinho de chegar. A trilha é curta e cheia de indicações.
 </p>
-<p>Distância: km</p>
-<p>Elevação: m</p>
+<p>Distância: 1km</p>
+<p>Elevação: 50m</p>
 
-<img src="https://res.cloudinary.com/marcelotokarnia/image/fetch/" alt="" />
+<img
+  src="https://res.cloudinary.com/marcelotokarnia/image/fetch/https://s2.wklcdn.com/image_155/4658744/32709359/21072692Master.jpg"
+  alt=""
+/>
