@@ -17,7 +17,7 @@
     "@tokks/strava": "^1.1.5",
     "classnames": "^2.3.1",
     "compression": "^1.7.1",
-    "highlight.js": "^10.1.2",
+    "highlight.js": "^10.4.1",
     "mappersmith": "^2.40.0",
     "marked": "^1.1.0",
     "polka": "next",
