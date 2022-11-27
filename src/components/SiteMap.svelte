@@ -4,6 +4,7 @@
     '/travel-xp/floripa',
     '/travel-xp/chapada-dos-veadeiros',
     '/torres-del-paine',
+    '/iceland',
     '/feed.xml',
   ]
 </script>
