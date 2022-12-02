@@ -20,6 +20,11 @@
     CAMPING: { name: 'CAMPING', image: campingIconUrl, icon: CampingIcon },
     WATER: { name: 'WATER', image: waterIconUrl, icon: WaterIcon },
     INFO: { name: 'INFO', image: infoIconUrl, icon: InfoIcon },
+    WATERFALL: { name: 'WATERFALL', image: infoIconUrl, icon: InfoIcon },
+    GLACIER: { name: 'GLACIER', image: infoIconUrl, icon: InfoIcon },
+    RIVER: { name: 'RIVER', image: infoIconUrl, icon: InfoIcon },
+    BEACH: { name: 'BEACH', image: infoIconUrl, icon: InfoIcon },
+    CAVE: { name: 'CAVE', image: infoIconUrl, icon: InfoIcon },
   }
 </script>
 
