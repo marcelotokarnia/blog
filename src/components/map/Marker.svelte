@@ -1,36 +1,7 @@
-<script context="module">
-  import {
-    ShopIcon,
-    shopIconUrl,
-    SummitIcon,
-    summitIconUrl,
-    ViewpointIcon,
-    viewpointIconUrl,
-    campingIconUrl,
-    CampingIcon,
-    waterIconUrl,
-    WaterIcon,
-    infoIconUrl,
-    InfoIcon,
-  } from './icons'
-  export const MARKER_TYPES = {
-    SHOP: { name: 'SHOP', image: shopIconUrl, icon: ShopIcon },
-    SUMMIT: { name: 'SUMMIT', image: summitIconUrl, icon: SummitIcon },
-    VIEWPOINT: { name: 'VIEWPOINT', image: viewpointIconUrl, icon: ViewpointIcon },
-    CAMPING: { name: 'CAMPING', image: campingIconUrl, icon: CampingIcon },
-    WATER: { name: 'WATER', image: waterIconUrl, icon: WaterIcon },
-    INFO: { name: 'INFO', image: infoIconUrl, icon: InfoIcon },
-    WATERFALL: { name: 'WATERFALL', image: infoIconUrl, icon: InfoIcon },
-    GLACIER: { name: 'GLACIER', image: infoIconUrl, icon: InfoIcon },
-    RIVER: { name: 'RIVER', image: infoIconUrl, icon: InfoIcon },
-    BEACH: { name: 'BEACH', image: infoIconUrl, icon: InfoIcon },
-    CAVE: { name: 'CAVE', image: infoIconUrl, icon: InfoIcon },
-  }
-</script>
-
 <script>
   import { getContext, setContext, onDestroy } from 'svelte'
   import { mapKey, targetKey, TARGET_TYPES } from './Map.svelte'
+  import { MARKER_TYPES } from './Marker.ts'
 
   const { getMap } = getContext(mapKey)
   const map = getMap()

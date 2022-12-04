@@ -1,4 +1,4 @@
-import { MARKER_TYPES } from '../../../components/map/Marker.svelte'
+import { MARKER_TYPES } from '../../../components/map/Marker'
 
 export default [
   {
