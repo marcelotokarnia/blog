@@ -214,33 +214,3 @@
   O resto dos dias foi uma caminhada predominantemente plana e tranquila, bem apreciativa e
   terminamos tranquilamente BEM ANTES do sol se por sem esforço algum. Nada para se preocupar. 🌸
 </p>
-
-<style>
-  .menu li {
-    display: block;
-  }
-  .map-size {
-    overflow: scroll;
-  }
-  .menu {
-    padding-inline-start: 10px;
-  }
-  .controls {
-    text-align: right;
-    margin-bottom: 5px;
-  }
-
-  .filters {
-    margin: 10px 0;
-  }
-
-  .pressed {
-    opacity: 0.5;
-  }
-  .flex1 {
-    flex: 1;
-  }
-  .flex4 {
-    flex: 4;
-  }
-</style>

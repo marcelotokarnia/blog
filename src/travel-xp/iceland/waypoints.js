@@ -4,17 +4,17 @@ export default [
   {
     name: 'Djúpalónssandur beach',
     position: { lat: 64.7522892, lng: -23.9005197 },
-    type: MARKER_TYPES.VIEWPOINT.name,
+    type: MARKER_TYPES.BEACH.name,
   },
   {
     name: 'Reykjadalur Hot Spring Thermal River',
     position: { lat: 64.0218019, lng: -21.210295 },
-    type: MARKER_TYPES.WATER.name,
+    type: MARKER_TYPES.RIVER.name,
   },
   {
     name: 'Blue Lagoon',
     position: { lat: 63.879078, lng: -22.445296 },
-    type: MARKER_TYPES.WATER.name,
+    type: MARKER_TYPES.RIVER.name,
   },
   {
     name: 'Svínafellsjökull Glacier',
@@ -39,7 +39,7 @@ export default [
   {
     name: 'Ásbyrgi',
     position: { lat: 66.0177725, lng: -16.505538 },
-    type: MARKER_TYPES.VIEWPOINT.name,
+    type: MARKER_TYPES.SUMMIT.name,
   },
   // {
   //   name: 'Campsite Ólafsvík',
@@ -159,7 +159,7 @@ export default [
   {
     name: 'Þingvellir National Park',
     position: { lat: 64.2559196, lng: -21.1295496 },
-    type: MARKER_TYPES.VIEWPOINT.name,
+    type: MARKER_TYPES.WATERFALL.name,
   },
   {
     name: 'Hverfjall',
@@ -169,7 +169,7 @@ export default [
   {
     name: 'Lava field Dimmuborgir',
     position: { lat: 65.5912203, lng: -16.91228 },
-    type: MARKER_TYPES.VIEWPOINT.name,
+    type: MARKER_TYPES.CAVE.name,
   },
   {
     name: 'Jökulsárlón',
@@ -254,7 +254,7 @@ export default [
   {
     name: 'Hvitserkur',
     position: { lat: 65.6063129, lng: -20.6352358 },
-    type: MARKER_TYPES.VIEWPOINT.name,
+    type: MARKER_TYPES.BEACH.name,
   },
   {
     name: 'Kirkjufell',

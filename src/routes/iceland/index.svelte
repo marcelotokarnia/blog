@@ -17,7 +17,7 @@
   import waypoints from '../../travel-xp/iceland/waypoints'
 
   const center = { lat: 64.8261753343854, lng: -18.448344754406953 }
-  const zoom = 6
+  const zoom = 7
   export let paths
 </script>
 

@@ -5,6 +5,11 @@ import {
   campingIconUrl,
   waterIconUrl,
   infoIconUrl,
+  waterfallIconUrl,
+  glacierIconUrl,
+  riverIconUrl,
+  beachIconUrl,
+  caveIconUrl,
 } from './icons'
 // https://www.flaticon.com/
 // https://www.svgrepo.com/
@@ -17,9 +22,9 @@ export const MARKER_TYPES = {
   CAMPING: { name: 'CAMPING', image: campingIconUrl },
   WATER: { name: 'WATER', image: waterIconUrl },
   INFO: { name: 'INFO', image: infoIconUrl },
-  WATERFALL: { name: 'WATERFALL', image: infoIconUrl },
-  GLACIER: { name: 'GLACIER', image: infoIconUrl },
-  RIVER: { name: 'RIVER', image: infoIconUrl },
-  BEACH: { name: 'BEACH', image: infoIconUrl },
-  CAVE: { name: 'CAVE', image: infoIconUrl },
+  WATERFALL: { name: 'WATERFALL', image: waterfallIconUrl },
+  GLACIER: { name: 'GLACIER', image: glacierIconUrl },
+  RIVER: { name: 'RIVER', image: riverIconUrl },
+  BEACH: { name: 'BEACH', image: beachIconUrl },
+  CAVE: { name: 'CAVE', image: caveIconUrl },
 }
